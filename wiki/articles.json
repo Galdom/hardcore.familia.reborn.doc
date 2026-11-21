@@ -1,0 +1,14 @@
+[
+  {"slug":"index","title":"Accueil","description":"Le wiki des joueurs de HardcoreFamiliaReborn : survie, rituels, malédictions, objets et arènes."},
+  {"slug":"debuter","title":"Bien débuter","description":"Les premiers repères pour découvrir HardcoreFamiliaReborn et préparer son aventure."},
+  {"slug":"don","title":"Le Don","description":"Obtenir le Don, apprendre des pages et accéder aux rituels."},
+  {"slug":"rituels","title":"Rituels","description":"Catalogue des treize rituels : ingrédients, niveaux, conditions et effets."},
+  {"slug":"constructions","title":"Constructions rituelles","description":"Plans et matériaux des trois niveaux du cercle de rituel et de l’autel vampirique."},
+  {"slug":"objets","title":"Objets et recettes","description":"Fabriquer les objets utiles, préparer les potions et réunir les ingrédients personnalisés."},
+  {"slug":"armes","title":"Armes et améliorations","description":"Les trois familles d’armes uniques, leurs recettes, leurs enchantements et leur progression."},
+  {"slug":"vampirisme","title":"Vampirisme","description":"Infection, réserve de sang, pouvoirs, faiblesses et progression des quatre niveaux de vampire."},
+  {"slug":"lycanthropie","title":"Lycanthropie","description":"Contamination, transformation à la pleine lune, faim et chasse du loup-garou."},
+  {"slug":"mobarena","title":"Mob Arenas","description":"Rejoindre une arène, affronter cinquante vagues et sortir avec les récompenses."},
+  {"slug":"protection","title":"Protection des biens","description":"Verrouiller un coffre avec un panneau [Lock], inviter des joueurs et comprendre les zones protégées."},
+  {"slug":"exploration","title":"Butin et exploration","description":"Où trouver les pages de rituel, le Don, le sang bouillonnant et les lingots d’argent."}
+]

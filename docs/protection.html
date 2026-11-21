@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Verrouiller un coffre avec un panneau [Lock], inviter des joueurs et comprendre les zones protégées.">
+  <meta name="color-scheme" content="light">
+  <title>Protection des biens — Wiki HardcoreFamiliaReborn</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/wiki.css">
+  <script src="assets/search-index.js" defer></script>
+  <script src="assets/wiki.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#article">Aller au contenu</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html">HardcoreFamiliaReborn <span>Le wiki des joueurs</span></a>
+    <form class="search" action="recherche.html" role="search">
+      <label class="visually-hidden" for="search">Rechercher dans le wiki</label>
+      <input id="search" name="q" type="search" placeholder="Rechercher dans le wiki" maxlength="200">
+      <button type="submit">Rechercher</button>
+    </form>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><details open><summary>Navigation</summary><nav aria-label="Articles du wiki"><ul><li><a href="index.html">Accueil</a></li>
+<li><a href="debuter.html">Bien débuter</a></li>
+<li><a href="don.html">Le Don</a></li>
+<li><a href="rituels.html">Rituels</a></li>
+<li><a href="constructions.html">Constructions rituelles</a></li>
+<li><a href="objets.html">Objets et recettes</a></li>
+<li><a href="armes.html">Armes et améliorations</a></li>
+<li><a href="vampirisme.html">Vampirisme</a></li>
+<li><a href="lycanthropie.html">Lycanthropie</a></li>
+<li><a href="mobarena.html">Mob Arenas</a></li>
+<li><a href="protection.html" aria-current="page">Protection des biens</a></li>
+<li><a href="exploration.html">Butin et exploration</a></li></ul></nav></details></aside>
+    <main id="article" tabindex="-1">
+      <div class="article-tab">Article</div>
+      <h1>Protection des biens</h1>
+      <p class="subtitle">De HardcoreFamiliaReborn, le wiki des joueurs.</p>
+      <nav class="toc" aria-label="Sommaire"><strong>Sommaire</strong><ul><li class="toc-h2"><a href="#poser">Créer un verrou avec [Lock]</a></li><li class="toc-h2"><a href="#placement">Placement du panneau</a></li><li class="toc-h2"><a href="#equipements">Équipements concernés</a></li><li class="toc-h2"><a href="#droits">Droits et retrait du verrou</a></li><li class="toc-h2"><a href="#effets">Effets sur l’environnement</a></li><li class="toc-h2"><a href="#zones">Vivre dans une zone protégée</a></li></ul></nav>
+      <article><p>Les <strong>panneaux de verrouillage</strong> réservent l’accès à un équipement au propriétaire et à ses invités. Les zones protégées préservent les constructions, mais ne verrouillent pas automatiquement le contenu des coffres.</p>
+
+<h2 id="poser">Créer un verrou avec [Lock]</h2>
+<ol>
+<li>Fixer un panneau en bois <strong>directement sur le bloc à protéger</strong>.</li>
+<li>Écrire <code>[Lock]</code> sur la première ligne d’un côté du panneau.</li>
+<li>Inscrire au besoin un pseudo par ligne suivante, soit <strong>trois invités au maximum</strong>.</li>
+</ol>
+<pre aria-label="Exemple de panneau de verrouillage"><code>[Lock]
+Alice
+Bob
+</code></pre>
+<p>Le créateur du panneau devient propriétaire et garde automatiquement l’accès : il n’a pas besoin d’écrire son pseudo. Sans invité, l’équipement est réservé à lui seul. Les majuscules et les espaces autour de <code>[Lock]</code> ne changent pas sa reconnaissance.</p>
+<p>Tous les bois conviennent, y compris le bambou, les bois du Nether et le chêne pâle. Les invités sont reconnus par leur pseudo actuel ; il faut modifier le panneau s’ils changent de pseudo. Le propriétaire garde ses droits après un changement de pseudo.</p>
+
+<h2 id="placement">Placement du panneau</h2>
+<ul>
+<li><strong>Panneau mural :</strong> protège le bloc sur lequel il est fixé, derrière lui.</li>
+<li><strong>Panneau posé :</strong> protège le bloc juste en dessous.</li>
+<li><strong>Panneau suspendu au plafond :</strong> protège le bloc juste au-dessus.</li>
+<li><strong>Panneau suspendu à une barre horizontale :</strong> nécessite exactement un support interactif latéral pour éviter toute ambiguïté.</li>
+</ul>
+<p>Un panneau simplement posé à proximité ne verrouille rien. Un seul panneau et un seul côté de liste d’accès sont acceptés par équipement.</p>
+
+<h2 id="equipements">Équipements concernés</h2>
+<p>Les verrous prennent en charge notamment :</p>
+<ul>
+<li>Les coffres simples ou doubles, tonneaux, fours, hauts fourneaux, fumoirs, entonnoirs, distributeurs, droppers et boîtes de shulker.</li>
+<li>Les portes, trappes, portillons, boutons, leviers, plaques de pression et lits.</li>
+<li>Les établis, tables d’enchantement et de forge, enclumes, meules, métiers à tisser, tailleurs de pierre et tables de cartographie.</li>
+<li>Les coffres de l’Ender, balises, cloches, blocs musicaux, répéteurs, comparateurs et capteurs de lumière.</li>
+<li>Les composteurs, chaudrons, gâteaux, ancres de réapparition, feux de camp, ruches, pots, bougies, buissons à baies et lianes des cavernes.</li>
+<li>Les coffres-forts, blocs suspects d’archéologie et œufs de dragon.</li>
+</ul>
+<p>Un bloc décoratif sans interaction prise en charge, comme une pierre ou une planche, ne devient pas verrouillable. Les deux moitiés d’un double coffre, d’une porte ou d’un lit partagent la protection.</p>
+
+<h2 id="droits">Droits et retrait du verrou</h2>
+<p>Le propriétaire et les invités peuvent utiliser l’équipement. Les autres joueurs ne le peuvent pas, même en tenant un objet. Un accès retiré ferme aussi les fenêtres de conteneur déjà ouvertes.</p>
+<p><strong>Le bloc verrouillé est incassable pour tous tant que le verrou existe.</strong> Seul le propriétaire peut modifier les invités, casser le panneau ou supprimer le marqueur pour retirer la protection. Les invités ne peuvent pas modifier ni cirer le panneau.</p>
+<p>Pour déplacer son coffre, retirer d’abord son verrou. Les doubles coffres ne peuvent pas être raccordés à un coffre protégé par un autre joueur.</p>
+
+<h2 id="effets">Effets sur l’environnement</h2>
+<p>Le verrou protège contre les explosions, le feu, les liquides, les pistons et les modifications par les entités. Les supports indispensables aux portes, lits et petits blocs attachés sont également protégés.</p>
+<p>Les transferts automatiques d’objets vers ou depuis un conteneur verrouillé, l’aspiration par un entonnoir verrouillé, les distributions et les changements de courant redstone du bloc sont bloqués. La cuisson normale d’un four continue.</p>
+<p>Un lit ou une ancre ne peut pas être activé dans une dimension où son utilisation provoquerait une explosion. L’œuf de dragon verrouillé ne se téléporte pas. Traverser une porte déjà ouverte reste possible.</p>
+
+<h2 id="zones">Vivre dans une zone protégée</h2>
+<p>Dans une zone protégée, seuls ses propriétaires peuvent construire, casser ou modifier les blocs et décorations. Les autres joueurs peuvent toutefois circuler, combattre et utiliser les équipements ordinaires, <strong>y compris ouvrir les coffres non verrouillés</strong>.</p>
+<p>Les protections de zone et les panneaux s’additionnent : être propriétaire d’une zone ne donne pas accès à l’équipement verrouillé de quelqu’un d’autre. Poser un verrou reste utile pour réserver un inventaire.</p>
+<p>Les explosions de TNT et de creepers peuvent encore blesser les entités, mais ne détruisent pas les blocs protégés. Le feu, les liquides, les pistons et les transformations naturelles ne modifient pas la zone. Les transferts automatiques d’inventaire affectant la zone sont bloqués, même pour ses propriétaires.</p>
+<p>Une zone a des limites en hauteur précises ; sa protection ne s’étend pas automatiquement du fond du monde jusqu’au ciel. Verrous et zones restent présents après les redémarrages.</p>
+</article>
+      <footer class="article-footer">Wiki de HardcoreFamiliaReborn · <a href="index.html">Accueil</a> · <a href="#article">Haut de page</a></footer>
+    </main>
+  </div>
+</body>
+</html>

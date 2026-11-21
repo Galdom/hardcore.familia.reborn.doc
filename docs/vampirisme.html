@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Infection, réserve de sang, pouvoirs, faiblesses et progression des quatre niveaux de vampire.">
+  <meta name="color-scheme" content="light">
+  <title>Vampirisme — Wiki HardcoreFamiliaReborn</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/wiki.css">
+  <script src="assets/search-index.js" defer></script>
+  <script src="assets/wiki.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#article">Aller au contenu</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html">HardcoreFamiliaReborn <span>Le wiki des joueurs</span></a>
+    <form class="search" action="recherche.html" role="search">
+      <label class="visually-hidden" for="search">Rechercher dans le wiki</label>
+      <input id="search" name="q" type="search" placeholder="Rechercher dans le wiki" maxlength="200">
+      <button type="submit">Rechercher</button>
+    </form>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><details open><summary>Navigation</summary><nav aria-label="Articles du wiki"><ul><li><a href="index.html">Accueil</a></li>
+<li><a href="debuter.html">Bien débuter</a></li>
+<li><a href="don.html">Le Don</a></li>
+<li><a href="rituels.html">Rituels</a></li>
+<li><a href="constructions.html">Constructions rituelles</a></li>
+<li><a href="objets.html">Objets et recettes</a></li>
+<li><a href="armes.html">Armes et améliorations</a></li>
+<li><a href="vampirisme.html" aria-current="page">Vampirisme</a></li>
+<li><a href="lycanthropie.html">Lycanthropie</a></li>
+<li><a href="mobarena.html">Mob Arenas</a></li>
+<li><a href="protection.html">Protection des biens</a></li>
+<li><a href="exploration.html">Butin et exploration</a></li></ul></nav></details></aside>
+    <main id="article" tabindex="-1">
+      <div class="article-tab">Article</div>
+      <h1>Vampirisme</h1>
+      <p class="subtitle">De HardcoreFamiliaReborn, le wiki des joueurs.</p>
+      <nav class="toc" aria-label="Sommaire"><strong>Sommaire</strong><ul><li class="toc-h2"><a href="#infection">Devenir vampire</a></li><li class="toc-h2"><a href="#reserve">Réserve de sang</a></li><li class="toc-h2"><a href="#dent">Se nourrir avec la Dent de vampire</a></li><li class="toc-h2"><a href="#niveaux">Pouvoirs selon le niveau</a></li><li class="toc-h2"><a href="#faiblesses">Soleil, feu et autres faiblesses</a></li><li class="toc-h2"><a href="#progression">Progression</a></li><li class="toc-h2"><a href="#autel">Actions de l’autel vampirique</a></li><li class="toc-h2"><a href="#guerison">Guérison et mort</a></li></ul></nav>
+      <article><p>Le <strong>vampirisme</strong> est une malédiction à quatre niveaux. Il donne des pouvoirs nocturnes, mais impose de boire du sang et, à partir du niveau 2, de se protéger du soleil. Un joueur ne peut pas être vampire et <a href="lycanthropie.html">loup-garou</a> en même temps.</p>
+
+<h2 id="infection">Devenir vampire</h2>
+<p>Boire une <strong>Fiole de sang bouillonnante</strong> transforme un joueur sans malédiction en vampire de niveau 1, avec une réserve initiale de <strong>120</strong>. Une fiole est garantie dans chaque coffre de butin des manoirs forestiers. Les vampires peuvent aussi en produire à l’autel.</p>
+<p>L’infection donne une Dent de vampire. Les fioles de sang classique, exquis ou humain ne contaminent pas ; une morsure avec la dent ne transmet pas non plus le vampirisme. Un lycanthrope conserve sa malédiction en buvant une fiole bouillonnante.</p>
+
+<h2 id="reserve">Réserve de sang</h2>
+<p>La réserve va de <strong>−240 à 240</strong> et baisse de <strong>1 par seconde passée en ligne</strong>, de jour comme de nuit. Elle reste figée hors ligne. Changer de niveau ne la remplit pas.</p>
+<div class="table-scroll"><table>
+<thead><tr><th>Réserve</th><th>État</th><th>Conséquences</th></tr></thead>
+<tbody>
+<tr><td>Plus de 60, jusqu’à 240</td><td>Bien nourri</td><td>Bonus nocturnes selon le niveau ; vision nocturne dès le niveau 2.</td></tr>
+<tr><td>Plus de 0, jusqu’à 60</td><td>Nourri</td><td>Pas de bonus nocturnes ; vision nocturne conservée dès le niveau 2.</td></tr>
+<tr><td>Plus de −180, jusqu’à 0</td><td>Affamé</td><td>Lenteur I et Faiblesse I, de jour comme de nuit.</td></tr>
+<tr><td>De −240 à −180 inclus</td><td>Soif extrême</td><td>Lenteur III et Faiblesse III, de jour comme de nuit.</td></tr>
+</tbody></table></div>
+<p>Une fiole classique ajoute <strong>40</strong>, une exquise <strong>180</strong> et une humaine <strong>240</strong>. Le gain s’ajoute à la valeur actuelle : une fiole humaine bue à −240 ramène la réserve à 0. Le plafond reste 240. Le chat annonce les changements d’état.</p>
+
+<h2 id="dent">Se nourrir avec la Dent de vampire</h2>
+<p>Faire un clic droit avec la dent, dans l’une ou l’autre main, sur une créature vivante visible à <strong>moins de 3 blocs</strong>. La dent n’est pas consommée.</p>
+<div class="table-scroll"><table>
+<thead><tr><th>Cible</th><th>Gain</th><th>Effets et restrictions</th></tr></thead>
+<tbody>
+<tr><td>Mob passif ou loup, sauvage ou apprivoisé</td><td>1 dose classique, +40 si bue</td><td>Une seule récolte par individu pour toute sa vie ; Wither III pendant 10 minutes.</td></tr>
+<tr><td>Villageois</td><td>4 doses classiques, +160 si toutes bues</td><td>Wither III limité à la moitié de sa vie maximale par drainage. Impossible de le drainer tant qu’il porte Wither.</td></tr>
+<tr><td>Autre joueur</td><td>1 dose humaine, +240 si bue</td><td>2 cœurs de dégâts de base, Poison II pendant 10 s, Nausée I pendant 30 s et Faiblesse I pendant 1 min. Impossible de le drainer tant qu’il porte Poison.</td></tr>
+<tr><td>Mort-vivant, même animal</td><td>Aucun</td><td>Le vampire reçoit Wither II et Nausée I pendant 5 s, et Faiblesse II pendant 1 min.</td></tr>
+<tr><td>Autre mob hostile ou animal neutre capable de riposter, hors loup</td><td>Aucun</td><td>Aucun effet.</td></tr>
+</tbody></table></div>
+<p>Les bouteilles vides du rangement ou de la main secondaire deviennent des fioles, à concurrence des doses récoltées. <strong>Les doses mises en bouteille ne nourrissent pas immédiatement.</strong> Les doses restantes sont bues directement. Avec quatre bouteilles sur un villageois, les quatre doses sont récoltées sans remplir la réserve.</p>
+<p>Le <a href="objets.html#sang-noir">Sang noir</a> peut protéger un non-vampire contre cette morsure : le vampire subit alors les effets d’un drainage de mort-vivant sans obtenir de sang ni blesser sa cible.</p>
+
+<h2 id="niveaux">Pouvoirs selon le niveau</h2>
+<p>Les bonus nocturnes exigent une réserve <strong>strictement supérieure à 60</strong>. La nuit correspond aux ticks 13 000 inclus à 23 000 exclus dans une dimension avec lumière du ciel.</p>
+<div class="table-scroll"><table>
+<thead><tr><th>Niveau</th><th>Bien nourri, la nuit</th><th>Vision nocturne si réserve &gt; 0</th><th>Soleil direct</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Aucun bonus</td><td>Non</td><td>Aucune faiblesse solaire.</td></tr>
+<tr><td>2</td><td>Vitesse I, Force I, Résistance I</td><td>Oui, jour et nuit</td><td>1 cœur par brûlure et Lenteur I.</td></tr>
+<tr><td>3</td><td>Vitesse II, Sauts améliorés II, Force I, Résistance I</td><td>Oui, jour et nuit</td><td>½ cœur par brûlure et Lenteur I.</td></tr>
+<tr><td>4</td><td>Vitesse II, Sauts améliorés II, Force I, Résistance I</td><td>Oui, jour et nuit</td><td>½ cœur par brûlure, sans lenteur solaire.</td></tr>
+</tbody></table></div>
+<p>Au niveau 4, les morts-vivants, dont les zombies, squelettes, phantoms et Wither, ne ciblent ni ne blessent le vampire, même en soif extrême. Les creepers gardent leur comportement habituel.</p>
+<p>Dès le niveau 2, la nourriture reste pleine, sans saturation ni épuisement. La régénération naturelle lente reste possible, mais pas les soins rapides de saturation. Boire du sang directement ou en fiole donne <strong>Régénération II pendant 8 secondes</strong>, y compris lors du premier repas qui fait passer au niveau 2. Une récolte entièrement en fioles ne donne pas cette régénération.</p>
+
+<h2 id="faiblesses">Soleil, feu et autres faiblesses</h2>
+<ul>
+<li><strong>Soleil :</strong> dès le niveau 2, exposition de jour par temps clair, sous le ciel et hors de l’eau. Un toit, même en verre, protège ; un casque ne protège pas. Une brûlure survient chaque seconde d’exposition continue. La mise à l’abri interrompt ce décompte.</li>
+<li><strong>Feu :</strong> à tous les niveaux, les dégâts de feu, lave, magma et feu de camp ne sont pas réduits par l’armure, les enchantements ou Résistance. Résistance au feu ne peut pas être appliquée.</li>
+<li><strong>Sommeil :</strong> impossible de dormir à tous les niveaux. Le vampire ne provoque pas l’apparition de phantoms liée à son manque de sommeil, mais ceux des autres joueurs peuvent rester présents.</li>
+<li><strong>Contre-mesures :</strong> le <a href="objets.html#pieu">Pieu</a> peut tuer en un coup direct ; l’<a href="objets.html#eau-benite">Eau bénite</a> inflige Wither et feu.</li>
+</ul>
+
+<h2 id="progression">Progression</h2>
+<p><strong>Niveau 1 → 2 :</strong> se nourrir une première fois avec la dent ou une fiole de sang classique, exquise ou humain. Cela fonctionne même à réserve pleine ou négative. Récolter uniquement en bouteilles ne déclenche pas ce passage. Les niveaux suivants s’obtiennent à l’autel.</p>
+
+<h2 id="autel">Actions de l’autel vampirique</h2>
+<p>Construire l’<a href="constructions.html#autel-vampirique">autel vampirique</a> puis faire un clic droit sur sa table d’enchantement. Le Don n’est pas requis. Les ingrédients sont pris dans le rangement et la main secondaire. Rester à au plus 8 blocs de l’autel, dans le même monde.</p>
+<div class="table-scroll"><table>
+<thead><tr><th>Action</th><th>Coût</th><th>Condition</th></tr></thead>
+<tbody>
+<tr><td>Créer une fiole bouillonnante</td><td>5 cœurs de vie actuelle et 1 fiole vide</td><td>Vampire de n’importe quel niveau.</td></tr>
+<tr><td>Créer une fiole exquise</td><td>1 fiole de sang classique et 1 éclat d’âme</td><td>Vampire de n’importe quel niveau.</td></tr>
+<tr><td>Récupérer une Dent de vampire</td><td>Gratuit</td><td>Vampire sans dent dans son inventaire, équipement, main secondaire ou curseur ; emplacement de rangement libre.</td></tr>
+<tr><td>Passer au niveau 3, vampire supérieur</td><td>1 fiole bouillonnante, 1 fiole humaine, 3 fioles exquises et 1 étoile du Nether</td><td>Niveau 2 exactement.</td></tr>
+<tr><td>Passer au niveau 4, vampire de sang ancien</td><td>5 fioles humaines, 10 fioles exquises, 1 tête d’Ender Dragon et 2 étoiles du Nether</td><td>Niveau 3 exactement ; œuf de dragon posé juste au-dessus de la table.</td></tr>
+<tr><td>Créer une fiole humaine</td><td>2 cœurs de vie actuelle et 1 fiole vide</td><td>Non-vampire, lycanthrope compris.</td></tr>
+</tbody></table></div>
+<p>Les sacrifices doivent laisser le joueur en vie : exactement 5 cœurs ne suffisent pas à créer la fiole bouillonnante, ni exactement 2 à créer la fiole humaine. Ils n’entament ni l’absorption ni la vie maximale. L’œuf de dragon exigé au niveau 4 reste intact.</p>
+<p>La progression conserve la réserve de sang et ne donne pas une nouvelle dent. Une dent rangée dans un coffre n’empêche pas la récupération gratuite d’une autre à l’autel.</p>
+
+<h2 id="guerison">Guérison et mort</h2>
+<p>Le rituel <a href="rituels.html#purification">Purification</a> soigne uniquement le niveau 1. Un vampire qui souhaite cette guérison doit donc éviter son premier repas.</p>
+<p><strong>Une mort réelle retire le vampirisme</strong>, son niveau et toute sa réserve de sang. Un totem ou une autre mort empêchée ne le retire pas. Une nouvelle infection recommence au niveau 1 avec 120 de réserve et donne une nouvelle dent.</p>
+</article>
+      <footer class="article-footer">Wiki de HardcoreFamiliaReborn · <a href="index.html">Accueil</a> · <a href="#article">Haut de page</a></footer>
+    </main>
+  </div>
+</body>
+</html>
