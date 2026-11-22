@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Le wiki des joueurs de HardcoreFamiliaReborn : survie, rituels, malédictions, objets et arènes.">
-  <meta name="color-scheme" content="light">
+  <meta name="color-scheme" content="light dark">
+  <script src="assets/theme.js"></script>
   <title>Accueil — Wiki HardcoreFamiliaReborn</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/wiki.css">
@@ -15,11 +16,20 @@
   <a class="skip-link" href="#article">Aller au contenu</a>
   <header class="site-header">
     <a class="wordmark" href="index.html">HardcoreFamiliaReborn <span>Le wiki des joueurs</span></a>
-    <form class="search" action="recherche.html" role="search">
-      <label class="visually-hidden" for="search">Rechercher dans le wiki</label>
-      <input id="search" name="q" type="search" placeholder="Rechercher dans le wiki" maxlength="200">
-      <button type="submit">Rechercher</button>
-    </form>
+    <div class="header-controls">
+      <form class="search" action="recherche.html" role="search">
+        <label class="visually-hidden" for="search">Rechercher dans le wiki</label>
+        <input id="search" name="q" type="search" placeholder="Rechercher dans le wiki" maxlength="200">
+        <button type="submit">Rechercher</button>
+      </form>
+      <label class="theme-picker" hidden>Thème
+        <select id="theme">
+          <option value="system">Système</option>
+          <option value="light">Clair</option>
+          <option value="dark">Sombre</option>
+        </select>
+      </label>
+    </div>
   </header>
   <div class="layout">
     <aside class="sidebar"><details open><summary>Navigation</summary><nav aria-label="Articles du wiki"><ul><li><a href="index.html" aria-current="page">Accueil</a></li>
@@ -48,7 +58,7 @@
   <li><a href="don.html"><strong>Le Don</strong></a><br>Obtenir la capacité nécessaire à la pratique des rituels.</li>
   <li><a href="rituels.html"><strong>Rituels</strong></a><br>Les ingrédients, conditions et effets des treize rituels.</li>
   <li><a href="constructions.html"><strong>Constructions rituelles</strong></a><br>Les plans des cercles de niveau 1 à 3 et de l’autel vampirique.</li>
-  <li><a href="objets.html"><strong>Objets et recettes</strong></a><br>Le grimoire, les âmes, les potions, l’argent et l’orbe.</li>
+  <li><a href="objets.html"><strong>Objets et recettes</strong></a><br>Le <a class="item-link" href="objet-grimoire.html">grimoire</a>, les âmes, les potions, l’argent et l’orbe.</li>
   <li><a href="armes.html"><strong>Armes et améliorations</strong></a><br>Les douze armes uniques et leur progression.</li>
   <li><a href="vampirisme.html"><strong>Vampirisme</strong></a><br>Les quatre niveaux de vampire, le sang et le soleil.</li>
   <li><a href="lycanthropie.html"><strong>Lycanthropie</strong></a><br>La pleine lune, la faim et la chasse du loup-garou.</li>
@@ -61,11 +71,11 @@
 <div class="table-scroll"><table>
 <thead><tr><th>Objectif</th><th>Première étape</th></tr></thead>
 <tbody>
-<tr><td>Pratiquer un rituel</td><td>Obtenir le Don, apprendre une page et fabriquer un grimoire.</td></tr>
+<tr><td>Pratiquer un rituel</td><td>Obtenir le Don, apprendre une page et fabriquer un <a class="item-link" href="objet-grimoire.html">grimoire</a>.</td></tr>
 <tr><td>Revenir à la vie</td><td>Un détenteur du Don utilise Résurrection pendant une nuit de pleine lune.</td></tr>
 <tr><td>Récupérer un cœur perdu</td><td>Recevoir le rituel Revigoration, jusqu’à dix cœurs de vie maximale de base.</td></tr>
-<tr><td>Se lancer dans une arène</td><td>Attendre son ouverture et utiliser une Orbe d’activation sur son autel.</td></tr>
-<tr><td>Sécuriser un coffre</td><td>Fixer un panneau directement sur le coffre avec <code>[Lock]</code> en première ligne.</td></tr>
+<tr><td>Se lancer dans une arène</td><td>Attendre son ouverture et utiliser une <a class="item-link" href="objet-orbe-activation.html">Orbe d’activation</a> sur son autel.</td></tr>
+<tr><td>Sécuriser un <a class="item-link" href="https://minecraft.wiki/w/Chest">coffre</a></td><td>Fixer un panneau directement sur le <a class="item-link" href="https://minecraft.wiki/w/Chest">coffre</a> avec <code>[Lock]</code> en première ligne.</td></tr>
 </tbody></table></div>
 
 <h2 id="lecture">Lire le wiki</h2>

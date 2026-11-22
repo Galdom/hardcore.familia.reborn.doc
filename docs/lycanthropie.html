@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Contamination, transformation à la pleine lune, faim et chasse du loup-garou.">
-  <meta name="color-scheme" content="light">
+  <meta name="color-scheme" content="light dark">
+  <script src="assets/theme.js"></script>
   <title>Lycanthropie — Wiki HardcoreFamiliaReborn</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/wiki.css">
@@ -15,11 +16,20 @@
   <a class="skip-link" href="#article">Aller au contenu</a>
   <header class="site-header">
     <a class="wordmark" href="index.html">HardcoreFamiliaReborn <span>Le wiki des joueurs</span></a>
-    <form class="search" action="recherche.html" role="search">
-      <label class="visually-hidden" for="search">Rechercher dans le wiki</label>
-      <input id="search" name="q" type="search" placeholder="Rechercher dans le wiki" maxlength="200">
-      <button type="submit">Rechercher</button>
-    </form>
+    <div class="header-controls">
+      <form class="search" action="recherche.html" role="search">
+        <label class="visually-hidden" for="search">Rechercher dans le wiki</label>
+        <input id="search" name="q" type="search" placeholder="Rechercher dans le wiki" maxlength="200">
+        <button type="submit">Rechercher</button>
+      </form>
+      <label class="theme-picker" hidden>Thème
+        <select id="theme">
+          <option value="system">Système</option>
+          <option value="light">Clair</option>
+          <option value="dark">Sombre</option>
+        </select>
+      </label>
+    </div>
   </header>
   <div class="layout">
     <aside class="sidebar"><details open><summary>Navigation</summary><nav aria-label="Articles du wiki"><ul><li><a href="index.html">Accueil</a></li>
@@ -60,7 +70,7 @@
 <tr><td>Faim</td><td>−100 à 100</td><td>1 par seconde en ligne</td><td>+30 par viande crue admissible mangée.</td></tr>
 <tr><td>Chasse</td><td>0 à 100</td><td>1 par seconde en ligne</td><td>+50 pour une autre entité vivante tuée, y compris un joueur.</td></tr>
 </tbody></table></div>
-<p>Ces gains fonctionnent <strong>uniquement pendant la transformation</strong>. Les viandes acceptées sont le bœuf, le porc, le poulet, le mouton et le lapin crus. Le poisson, la viande cuite et la chair putréfiée ne remplissent pas la faim du loup-garou.</p>
+<p>Ces gains fonctionnent <strong>uniquement pendant la transformation</strong>. Les viandes acceptées sont le <a class="item-link" href="https://minecraft.wiki/w/Raw_Beef">bœuf cru</a>, le <a class="item-link" href="https://minecraft.wiki/w/Raw_Porkchop">porc cru</a>, le <a class="item-link" href="https://minecraft.wiki/w/Raw_Chicken">poulet cru</a>, le <a class="item-link" href="https://minecraft.wiki/w/Raw_Mutton">mouton cru</a> et le <a class="item-link" href="https://minecraft.wiki/w/Raw_Rabbit">lapin cru</a>. Le poisson, la viande cuite et la <a class="item-link" href="https://minecraft.wiki/w/Rotten_Flesh">chair putréfiée</a> ne remplissent pas la faim du loup-garou.</p>
 <p>La barre de nourriture Minecraft reste indépendante. Même si elle est pleine, faire un clic droit avec une viande crue permet d’en consommer une immédiatement, sans remplir cette barre. Faire le clic dans l’air ou en s’accroupissant devant un bloc. Un délai de 1,6 seconde sépare deux prises du même aliment.</p>
 <p>Les compteurs apparaissent dans la barre d’action pendant la transformation. Ils restent conservés entre deux pleines lunes et après une reconnexion : ils ne sont pas réinitialisés chaque nuit. Ils ne diminuent pas hors ligne.</p>
 
@@ -70,7 +80,7 @@
 
 <h2 id="guerison">Guérison et mort</h2>
 <p>Le rituel <a href="rituels.html#purification">Purification</a> peut guérir la lycanthropie, qui ne possède actuellement que le niveau 1. Il faut rejoindre le cercle d’un officiant connaissant ce rituel et se tenir à strictement moins de 8 blocs de son centre.</p>
-<p><strong>Une mort réelle retire aussi la lycanthropie</strong>, même hors transformation. La malédiction, la faim et la chasse disparaissent. Une mort empêchée par un totem ne guérit pas. Une nouvelle infection recommence à 100/100.</p>
+<p><strong>Une mort réelle retire aussi la lycanthropie</strong>, même hors transformation. La malédiction, la faim et la chasse disparaissent. Une mort empêchée par un <a class="item-link" href="https://minecraft.wiki/w/Totem_of_Undying">totem</a> ne guérit pas. Une nouvelle infection recommence à 100/100.</p>
 </article>
       <footer class="article-footer">Wiki de HardcoreFamiliaReborn · <a href="index.html">Accueil</a> · <a href="#article">Haut de page</a></footer>
     </main>

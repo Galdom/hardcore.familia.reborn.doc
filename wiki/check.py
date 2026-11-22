@@ -7,6 +7,9 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 
+from item_links import MINECRAFT_WIKI, item_url
+
+
 ROOT = Path(__file__).resolve().parent.parent / "docs"
 
 
@@ -44,11 +47,20 @@ def main():
         assert parser.tables == parser.headers, f"{path.name}: tableau sans en-tête"
         pages[path.resolve()] = parser
     assert pages, "Le site doit être généré avant la vérification."
+    vanilla = json.loads((ROOT.parent / "wiki" / "vanilla-items.json").read_text(encoding="utf-8"))
+    allowed_external = {MINECRAFT_WIKI + article for article in vanilla}
+    items = json.loads((ROOT.parent / "wiki" / "items.json").read_text(encoding="utf-8"))
+    for item in items:
+        assert (ROOT / item_url(item)).resolve() in pages, f"Fiche manquante : {item['title']}"
     count = 0
+    external = 0
     for path, page in pages.items():
         for reference in page.references:
             url = urlsplit(reference)
-            assert not url.scheme and not url.netloc, f"Référence externe inattendue : {reference}"
+            if url.scheme or url.netloc:
+                assert reference in allowed_external, f"Référence externe inattendue : {reference}"
+                external += 1
+                continue
             assert not url.path.startswith("/"), f"Lien incompatible avec un sous-dossier : {reference}"
             target = (path.parent / unquote(url.path)).resolve() if url.path else path
             assert target.is_relative_to(ROOT.resolve()), f"Référence hors du site : {reference}"
@@ -64,7 +76,7 @@ def main():
         assert (ROOT / entry["url"]).resolve() in pages
         assert entry["text"], f"Article vide : {entry['title']}"
     assert (ROOT / ".nojekyll").is_file()
-    print(f"OK : {len(pages)} pages, {count} références locales et {len(entries)} articles indexés.")
+    print(f"OK : {len(pages)} pages, {count} références locales, {external} liens Minecraft Wiki et {len(entries)} pages indexées.")
 
 
 if __name__ == "__main__":

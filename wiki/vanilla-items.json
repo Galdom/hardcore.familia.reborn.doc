@@ -1,0 +1,523 @@
+{
+  "Amethyst_Shard": [
+    "éclat d’améthyste",
+    "éclats d’améthyste"
+  ],
+  "Block_of_Amethyst": [
+    "bloc d’améthyste",
+    "blocs d’améthyste"
+  ],
+  "Diamond": [
+    "diamant",
+    "diamants"
+  ],
+  "Block_of_Diamond": [
+    "bloc de diamant",
+    "blocs de diamant"
+  ],
+  "Golden_Apple": [
+    "pomme dorée",
+    "pommes dorées",
+    "pomme dorée ordinaire",
+    "pommes dorées ordinaires"
+  ],
+  "Enchanted_Golden_Apple": [
+    "pomme dorée enchantée",
+    "pommes dorées enchantées"
+  ],
+  "Nether_Quartz": [
+    "quartz du Nether"
+  ],
+  "Nether_Star": [
+    "étoile du Nether",
+    "étoiles du Nether"
+  ],
+  "Echo_Shard": [
+    "éclat d’écho",
+    "éclats d’écho"
+  ],
+  "Bone": [
+    "os"
+  ],
+  "Bone_Meal": [
+    "poudre d’os",
+    "poudres d’os"
+  ],
+  "Rotten_Flesh": [
+    "chair putréfiée",
+    "chairs putréfiées"
+  ],
+  "Copper_Ingot": [
+    "lingot de cuivre",
+    "lingots de cuivre"
+  ],
+  "Iron_Ingot": [
+    "lingot de fer",
+    "lingots de fer"
+  ],
+  "Gold_Ingot": [
+    "lingot d’or",
+    "lingots d’or"
+  ],
+  "Block_of_Gold": [
+    "bloc d’or",
+    "blocs d’or"
+  ],
+  "Glow_Berries": [
+    "baie lumineuse",
+    "baies lumineuses"
+  ],
+  "Sunflower": [
+    "tournesol",
+    "tournesols"
+  ],
+  "Ink_Sac": [
+    "poche d’encre ordinaire",
+    "poches d’encre ordinaires"
+  ],
+  "Glow_Ink_Sac": [
+    "poche d’encre luisante",
+    "poches d’encre luisantes"
+  ],
+  "Ender_Pearl": [
+    "perle de l’Ender",
+    "perles de l’Ender"
+  ],
+  "Gunpowder": [
+    "poudre à canon",
+    "poudres à canon"
+  ],
+  "Charcoal": [
+    "charbon de bois"
+  ],
+  "Coal": [
+    "charbon"
+  ],
+  "Blaze_Powder": [
+    "poudre de blaze",
+    "poudres de blaze"
+  ],
+  "Magma_Cream": [
+    "crème de magma"
+  ],
+  "End_Stone": [
+    "pierre de l’End",
+    "pierres de l’End"
+  ],
+  "End_Crystal": [
+    "cristal de l’End",
+    "cristaux de l’End"
+  ],
+  "End_Portal_Frame": [
+    "cadre de portail de l’End",
+    "cadres de portail de l’End",
+    "cadre de portail",
+    "cadres de portail"
+  ],
+  "Eye_of_Ender": [
+    "œil de l’Ender",
+    "yeux de l’Ender"
+  ],
+  "Honeycomb": [
+    "rayon de miel",
+    "rayons de miel"
+  ],
+  "Dragon%27s_Breath": [
+    "souffle de dragon",
+    "souffles de dragon"
+  ],
+  "Glowstone_Dust": [
+    "poudre lumineuse",
+    "poudres lumineuses"
+  ],
+  "Glass_Bottle": [
+    "fiole vide",
+    "fioles vides",
+    "bouteille vide",
+    "bouteilles vides"
+  ],
+  "Water_Bottle": [
+    "fiole d’eau",
+    "fioles d’eau"
+  ],
+  "Book": [
+    "livre ordinaire",
+    "livres ordinaires"
+  ],
+  "Enchanted_Book": [
+    "livre enchanté",
+    "livres enchantés",
+    "livre à enchantement aléatoire",
+    "livre d’enchantement"
+  ],
+  "Stick": [
+    "bâton",
+    "bâtons",
+    "bâton ordinaire",
+    "bâtons ordinaires"
+  ],
+  "Sword": [
+    "épée en bois",
+    "épée en fer",
+    "épée en diamant",
+    "épée en netherite"
+  ],
+  "Axe": [
+    "hache en fer",
+    "hache en diamant",
+    "hache en netherite"
+  ],
+  "Bow": [
+    "arc",
+    "arcs",
+    "arc ordinaire"
+  ],
+  "Shield": [
+    "bouclier",
+    "boucliers"
+  ],
+  "Totem_of_Undying": [
+    "totem",
+    "totems"
+  ],
+  "Campfire": [
+    "feu de camp",
+    "feux de camp",
+    "feu de camp normal",
+    "feu de camp des âmes"
+  ],
+  "Soul_Sand": [
+    "sable des âmes",
+    "sables des âmes"
+  ],
+  "Wall": [
+    "muret de pierres",
+    "murets de pierres",
+    "muret de pierres des abîmes",
+    "murets de pierres des abîmes",
+    "cobbled deepslate",
+    "muret d’ardoise des abîmes polie",
+    "murets d’ardoise des abîmes polie"
+  ],
+  "Candle": [
+    "bougie",
+    "bougies",
+    "bougie allumée",
+    "bougies allumées",
+    "bougie rouge",
+    "bougies rouges",
+    "bougie rouge allumée",
+    "bougies rouges allumées"
+  ],
+  "Lantern": [
+    "lanterne",
+    "lanternes",
+    "lanterne normale",
+    "lanternes normales",
+    "lanterne des âmes",
+    "lanternes des âmes"
+  ],
+  "End_Rod": [
+    "barre de l’End",
+    "barres de l’End"
+  ],
+  "Enchanting_Table": [
+    "table d’enchantement",
+    "tables d’enchantement"
+  ],
+  "Carpet": [
+    "tapis rouge",
+    "tapis rouges"
+  ],
+  "Stairs": [
+    "escalier en ardoise des abîmes polie",
+    "escaliers en ardoise des abîmes polie",
+    "escalier inversé en ardoise des abîmes polie",
+    "escalier droit en ardoise des abîmes polie"
+  ],
+  "Glazed_Terracotta": [
+    "terre cuite émaillée rouge",
+    "terres cuites émaillées rouges"
+  ],
+  "Log": [
+    "bûche de chêne pâle",
+    "bûches de chêne pâle"
+  ],
+  "Dragon_Egg": [
+    "œuf de dragon",
+    "œufs de dragon"
+  ],
+  "Head": [
+    "tête d’Ender Dragon",
+    "tête de dragon"
+  ],
+  "Brewing_Stand": [
+    "alambic",
+    "alambics"
+  ],
+  "Ghast_Tear": [
+    "larme de ghast",
+    "larmes de ghast"
+  ],
+  "Prismarine_Crystals": [
+    "cristaux de prismarine"
+  ],
+  "Crafting_Table": [
+    "table de fabrication",
+    "établi",
+    "établis"
+  ],
+  "Smithing_Table": [
+    "table de forge"
+  ],
+  "Anvil": [
+    "enclume",
+    "enclumes"
+  ],
+  "Grindstone": [
+    "meule",
+    "meules"
+  ],
+  "Bottle_o%27_Enchanting": [
+    "bouteille d’expérience",
+    "bouteilles d’expérience"
+  ],
+  "Smithing_Template": [
+    "modèle d’amélioration en netherite",
+    "modèle de garniture d’armure",
+    "modèles de garniture d’armure"
+  ],
+  "Netherite_Scrap": [
+    "fragment de netherite",
+    "fragments de netherite"
+  ],
+  "Bundle": [
+    "bundle",
+    "bundles"
+  ],
+  "Potion": [
+    "potion bénéfique aléatoire"
+  ],
+  "Map": [
+    "carte au trésor",
+    "cartes au trésor"
+  ],
+  "Raw_Beef": [
+    "bœuf cru"
+  ],
+  "Raw_Porkchop": [
+    "porc cru"
+  ],
+  "Raw_Chicken": [
+    "poulet cru"
+  ],
+  "Raw_Mutton": [
+    "mouton cru"
+  ],
+  "Raw_Rabbit": [
+    "lapin cru"
+  ],
+  "Sign": [
+    "panneau en bois",
+    "panneaux en bois",
+    "panneau mural",
+    "panneau posé"
+  ],
+  "Hanging_Sign": [
+    "panneau suspendu"
+  ],
+  "Chest": [
+    "coffre",
+    "coffres",
+    "coffre simple",
+    "coffres simples",
+    "coffre double",
+    "coffres doubles"
+  ],
+  "Barrel": [
+    "tonneau",
+    "tonneaux"
+  ],
+  "Furnace": [
+    "four",
+    "fours"
+  ],
+  "Blast_Furnace": [
+    "haut fourneau",
+    "hauts fourneaux"
+  ],
+  "Smoker": [
+    "fumoir",
+    "fumoirs"
+  ],
+  "Hopper": [
+    "entonnoir",
+    "entonnoirs"
+  ],
+  "Dispenser": [
+    "distributeur",
+    "distributeurs"
+  ],
+  "Dropper": [
+    "dropper",
+    "droppers"
+  ],
+  "Shulker_Box": [
+    "boîte de shulker",
+    "boîtes de shulker"
+  ],
+  "Door": [
+    "porte",
+    "portes"
+  ],
+  "Trapdoor": [
+    "trappe",
+    "trappes"
+  ],
+  "Fence_Gate": [
+    "portillon",
+    "portillons"
+  ],
+  "Button": [
+    "bouton",
+    "boutons"
+  ],
+  "Lever": [
+    "levier",
+    "leviers"
+  ],
+  "Pressure_Plate": [
+    "plaque de pression",
+    "plaques de pression"
+  ],
+  "Bed": [
+    "lit",
+    "lits"
+  ],
+  "Loom": [
+    "métier à tisser",
+    "métiers à tisser"
+  ],
+  "Stonecutter": [
+    "tailleur de pierre",
+    "tailleurs de pierre"
+  ],
+  "Cartography_Table": [
+    "table de cartographie",
+    "tables de cartographie"
+  ],
+  "Ender_Chest": [
+    "coffre de l’Ender",
+    "coffres de l’Ender"
+  ],
+  "Beacon": [
+    "balise",
+    "balises"
+  ],
+  "Bell": [
+    "cloche",
+    "cloches"
+  ],
+  "Note_Block": [
+    "bloc musical",
+    "blocs musicaux"
+  ],
+  "Redstone_Repeater": [
+    "répéteur",
+    "répéteurs"
+  ],
+  "Redstone_Comparator": [
+    "comparateur",
+    "comparateurs"
+  ],
+  "Daylight_Detector": [
+    "capteur de lumière",
+    "capteurs de lumière"
+  ],
+  "Composter": [
+    "composteur",
+    "composteurs"
+  ],
+  "Cauldron": [
+    "chaudron",
+    "chaudrons"
+  ],
+  "Cake": [
+    "gâteau",
+    "gâteaux"
+  ],
+  "Respawn_Anchor": [
+    "ancre de réapparition",
+    "ancres de réapparition"
+  ],
+  "Beehive": [
+    "ruche",
+    "ruches"
+  ],
+  "Flower_Pot": [
+    "pot de fleurs",
+    "pots de fleurs"
+  ],
+  "Decorated_Pot": [
+    "pot décoré",
+    "pots décorés"
+  ],
+  "Sweet_Berry_Bush": [
+    "buisson à baies",
+    "buissons à baies"
+  ],
+  "Cave_Vines": [
+    "liane des cavernes",
+    "lianes des cavernes"
+  ],
+  "Vault": [
+    "coffre-fort",
+    "coffres-forts"
+  ],
+  "Suspicious_Block": [
+    "bloc suspect d’archéologie",
+    "blocs suspects d’archéologie"
+  ],
+  "TNT": [
+    "TNT"
+  ],
+  "Piston": [
+    "piston",
+    "pistons"
+  ],
+  "Bucket": [
+    "seau",
+    "seaux"
+  ],
+  "Redstone_Dust": [
+    "poudre de redstone",
+    "redstone"
+  ],
+  "Glass": [
+    "verre"
+  ],
+  "Planks": [
+    "planche",
+    "planches"
+  ],
+  "Stone": [
+    "pierre"
+  ],
+  "Water": [
+    "eau"
+  ],
+  "Lava": [
+    "lave"
+  ],
+  "Magma_Block": [
+    "bloc de magma",
+    "blocs de magma"
+  ],
+  "Arrow": [
+    "flèche",
+    "flèches"
+  ],
+  "Heart_of_the_Sea": [
+    "cœur de la mer"
+  ]
+}

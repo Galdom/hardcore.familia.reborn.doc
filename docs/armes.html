@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Les trois familles d’armes uniques, leurs recettes, leurs enchantements et leur progression.">
-  <meta name="color-scheme" content="light">
+  <meta name="color-scheme" content="light dark">
+  <script src="assets/theme.js"></script>
   <title>Armes et améliorations — Wiki HardcoreFamiliaReborn</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/wiki.css">
@@ -15,11 +16,20 @@
   <a class="skip-link" href="#article">Aller au contenu</a>
   <header class="site-header">
     <a class="wordmark" href="index.html">HardcoreFamiliaReborn <span>Le wiki des joueurs</span></a>
-    <form class="search" action="recherche.html" role="search">
-      <label class="visually-hidden" for="search">Rechercher dans le wiki</label>
-      <input id="search" name="q" type="search" placeholder="Rechercher dans le wiki" maxlength="200">
-      <button type="submit">Rechercher</button>
-    </form>
+    <div class="header-controls">
+      <form class="search" action="recherche.html" role="search">
+        <label class="visually-hidden" for="search">Rechercher dans le wiki</label>
+        <input id="search" name="q" type="search" placeholder="Rechercher dans le wiki" maxlength="200">
+        <button type="submit">Rechercher</button>
+      </form>
+      <label class="theme-picker" hidden>Thème
+        <select id="theme">
+          <option value="system">Système</option>
+          <option value="light">Clair</option>
+          <option value="dark">Sombre</option>
+        </select>
+      </label>
+    </div>
   </header>
   <div class="layout">
     <aside class="sidebar"><details open><summary>Navigation</summary><nav aria-label="Articles du wiki"><ul><li><a href="index.html">Accueil</a></li>
@@ -43,11 +53,11 @@
 
 <h2 id="depart">Fabriquer les armes de départ</h2>
 <div class="table-scroll"><table>
-<thead><tr><th>Arme</th><th>Recette dans la table de fabrication</th></tr></thead>
+<thead><tr><th>Arme</th><th>Recette dans la <a class="item-link" href="https://minecraft.wiki/w/Crafting_Table">table de fabrication</a></th></tr></thead>
 <tbody>
-<tr><td>Épée d’argent lunaire</td><td>2 lingots d’argent lunaire superposés au-dessus d’un bâton, comme une épée classique.</td></tr>
-<tr><td>Hache de Fer-Sanglant</td><td>3 lingots de fer-sang et 2 bâtons, comme une hache classique ; les deux orientations sont acceptées.</td></tr>
-<tr><td>Éclat de l’aurore</td><td>1 arc ordinaire au centre et 4 orbes lumineuses au-dessus, en dessous, à gauche et à droite ; coins vides.</td></tr>
+<tr><td><a class="item-link" href="objet-epee-argent-lunaire.html">Épée d’argent lunaire</a></td><td>2 <a class="item-link" href="objet-argent-lunaire.html">lingots d’argent lunaire</a> superposés au-dessus d’un <a class="item-link" href="https://minecraft.wiki/w/Stick">bâton</a>, comme une épée classique.</td></tr>
+<tr><td><a class="item-link" href="objet-hache-fer-sanglant.html">Hache de Fer-Sanglant</a></td><td>3 <a class="item-link" href="objet-fer-sang.html">lingots de fer-sang</a> et 2 <a class="item-link" href="https://minecraft.wiki/w/Stick">bâtons</a>, comme une hache classique ; les deux orientations sont acceptées.</td></tr>
+<tr><td><a class="item-link" href="objet-eclat-aurore.html">Éclat de l’aurore</a></td><td>1 <a class="item-link" href="https://minecraft.wiki/w/Bow">arc ordinaire</a> au centre et 4 <a class="item-link" href="objet-orbe-lumineuse.html">orbes lumineuses</a> au-dessus, en dessous, à gauche et à droite ; coins vides.</td></tr>
 </tbody></table></div>
 
 <h2 id="ameliorations">Fabriquer les améliorations</h2>
@@ -55,28 +65,28 @@
 <pre aria-label="Recette des améliorations"><code>. I .
 I N I
 . I .</code></pre>
-<p><strong>N</strong> : étoile du Nether ; <strong>I</strong> : ingrédient indiqué ci-dessous ; <strong>.</strong> : case vide.</p>
+<p><strong>N</strong> : <a class="item-link" href="https://minecraft.wiki/w/Nether_Star">étoile du Nether</a> ; <strong>I</strong> : ingrédient indiqué ci-dessous ; <strong>.</strong> : case vide.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>Amélioration</th><th>Ingrédient, 4 exemplaires</th></tr></thead>
-<tbody><tr><td>Supérieur</td><td>Quartz du Nether</td></tr><tr><td>Mythique</td><td>Éclat d’améthyste</td></tr><tr><td>Légendaire</td><td>Éclat d’écho</td></tr></tbody>
+<tbody><tr><td><a class="item-link" href="objet-amelioration-superieur.html">Amélioration supérieur</a></td><td><a class="item-link" href="https://minecraft.wiki/w/Nether_Quartz">Quartz du Nether</a></td></tr><tr><td><a class="item-link" href="objet-amelioration-mythique.html">Amélioration mythique</a></td><td><a class="item-link" href="https://minecraft.wiki/w/Amethyst_Shard">Éclat d’améthyste</a></td></tr><tr><td><a class="item-link" href="objet-amelioration-legendaire.html">Amélioration légendaire</a></td><td><a class="item-link" href="https://minecraft.wiki/w/Echo_Shard">Éclat d’écho</a></td></tr></tbody>
 </table></div>
 
-<h2 id="forge">Progression à la table de forge</h2>
+<h2 id="forge">Progression à la <a class="item-link" href="https://minecraft.wiki/w/Smithing_Table">table de forge</a></h2>
 <p>Placer l’amélioration dans l’emplacement du modèle, l’arme dans celui de l’équipement et le matériau dans celui de l’ajout. Chaque opération consomme <strong>une arme, un matériau et une amélioration</strong> et donne une arme neuve.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>Arme utilisée</th><th>Matériau ajouté</th><th>Amélioration</th><th>Résultat</th></tr></thead>
 <tbody>
-<tr><td>Épée d’argent lunaire</td><td>Fragment lunaire</td><td>Supérieur</td><td>Glaive lunaire</td></tr>
-<tr><td>Glaive lunaire</td><td>Vestige nocturne</td><td>Mythique</td><td>Lame de la nuit</td></tr>
-<tr><td>Lame de la nuit</td><td>Poussière d’étoiles</td><td>Légendaire</td><td>Clairétoile</td></tr>
-<tr><td>Hache de Fer-Sanglant</td><td>Os d’iridium</td><td>Supérieur</td><td>Écorchefer</td></tr>
-<tr><td>Écorchefer</td><td>Fer-sang pur</td><td>Mythique</td><td>Fendoir du Ravageur</td></tr>
-<tr><td>Fendoir du Ravageur</td><td>Sang du berserker</td><td>Légendaire</td><td>Souffrechair</td></tr>
-<tr><td>Éclat de l’aurore</td><td>Lumière en bouteille</td><td>Supérieur</td><td>Trait de lumière</td></tr>
-<tr><td>Trait de lumière</td><td>Vestige immolé</td><td>Mythique</td><td>Arc des flammes</td></tr>
-<tr><td>Arc des flammes</td><td>Braise éternelle</td><td>Légendaire</td><td>Soléclat</td></tr>
+<tr><td><a class="item-link" href="objet-epee-argent-lunaire.html">Épée d’argent lunaire</a></td><td><a class="item-link" href="objet-fragment-lunaire.html">Fragment lunaire</a></td><td><a class="item-link" href="objet-amelioration-superieur.html">Amélioration supérieur</a></td><td><a class="item-link" href="objet-glaive-lunaire.html">Glaive lunaire</a></td></tr>
+<tr><td><a class="item-link" href="objet-glaive-lunaire.html">Glaive lunaire</a></td><td><a class="item-link" href="objet-vestige-nocturne.html">Vestige nocturne</a></td><td><a class="item-link" href="objet-amelioration-mythique.html">Amélioration mythique</a></td><td><a class="item-link" href="objet-lame-nuit.html">Lame de la nuit</a></td></tr>
+<tr><td><a class="item-link" href="objet-lame-nuit.html">Lame de la nuit</a></td><td><a class="item-link" href="objet-poussiere-etoiles.html">Poussière d’étoiles</a></td><td><a class="item-link" href="objet-amelioration-legendaire.html">Amélioration légendaire</a></td><td><a class="item-link" href="objet-clairetoile.html">Clairétoile</a></td></tr>
+<tr><td><a class="item-link" href="objet-hache-fer-sanglant.html">Hache de Fer-Sanglant</a></td><td><a class="item-link" href="objet-os-iridium.html">Os d’iridium</a></td><td><a class="item-link" href="objet-amelioration-superieur.html">Amélioration supérieur</a></td><td><a class="item-link" href="objet-ecorchefer.html">Écorchefer</a></td></tr>
+<tr><td><a class="item-link" href="objet-ecorchefer.html">Écorchefer</a></td><td><a class="item-link" href="objet-fer-sang-pur.html">Fer-sang pur</a></td><td><a class="item-link" href="objet-amelioration-mythique.html">Amélioration mythique</a></td><td><a class="item-link" href="objet-fendoir-ravageur.html">Fendoir du Ravageur</a></td></tr>
+<tr><td><a class="item-link" href="objet-fendoir-ravageur.html">Fendoir du Ravageur</a></td><td><a class="item-link" href="objet-sang-berserker.html">Sang du berserker</a></td><td><a class="item-link" href="objet-amelioration-legendaire.html">Amélioration légendaire</a></td><td><a class="item-link" href="objet-souffrechair.html">Souffrechair</a></td></tr>
+<tr><td><a class="item-link" href="objet-eclat-aurore.html">Éclat de l’aurore</a></td><td><a class="item-link" href="objet-lumiere-bouteille.html">Lumière en bouteille</a></td><td><a class="item-link" href="objet-amelioration-superieur.html">Amélioration supérieur</a></td><td><a class="item-link" href="objet-trait-lumiere.html">Trait de lumière</a></td></tr>
+<tr><td><a class="item-link" href="objet-trait-lumiere.html">Trait de lumière</a></td><td><a class="item-link" href="objet-vestige-immole.html">Vestige immolé</a></td><td><a class="item-link" href="objet-amelioration-mythique.html">Amélioration mythique</a></td><td><a class="item-link" href="objet-arc-flammes.html">Arc des flammes</a></td></tr>
+<tr><td><a class="item-link" href="objet-arc-flammes.html">Arc des flammes</a></td><td><a class="item-link" href="objet-braise-eternelle.html">Braise éternelle</a></td><td><a class="item-link" href="objet-amelioration-legendaire.html">Amélioration légendaire</a></td><td><a class="item-link" href="objet-soleclat.html">Soléclat</a></td></tr>
 </tbody></table></div>
-<p>Ces neuf améliorations fonctionnent uniquement à la table de forge. Une arme usée est acceptée, mais son état et ses éventuelles modifications ne sont pas transmis au résultat.</p>
+<p>Ces neuf améliorations fonctionnent uniquement à la <a class="item-link" href="https://minecraft.wiki/w/Smithing_Table">table de forge</a>. Une arme usée est acceptée, mais son état et ses éventuelles modifications ne sont pas transmis au résultat.</p>
 
 <h2 id="enchantements">Enchantements des armes</h2>
 <p>Dans les tableaux, les noms d’enchantement correspondent aux identifiants anglais affichés par certains clients : Sharpness (Tranchant), Smite (Châtiment), Sweeping Edge (Affilage), Unbreaking (Solidité), Mending (Raccommodage), Looting (Butin), Fire Aspect (Aura de feu), Power (Puissance), Infinity (Infinité) et Flame (Flamme).</p>
@@ -85,33 +95,33 @@ I N I
 <caption>Famille lunaire</caption>
 <thead><tr><th>Arme</th><th>Base</th><th>Autres enchantements</th></tr></thead>
 <tbody>
-<tr><td>Épée d’argent lunaire</td><td>Épée en fer</td><td>Sharpness III, Smite II, Sweeping Edge IV, Looting II</td></tr>
-<tr><td>Glaive lunaire</td><td>Épée en fer</td><td>Sharpness V, Smite II, Sweeping Edge IV, Looting III, Fire Aspect I</td></tr>
-<tr><td>Lame de la nuit</td><td>Épée en diamant</td><td>Sharpness V, Smite III, Sweeping Edge IV, Looting III, Fire Aspect II</td></tr>
-<tr><td>Clairétoile</td><td>Épée en netherite</td><td>Sharpness VII, Smite IV, Bane of Arthropods III (Fléau des arthropodes), Sweeping Edge IV, Looting IV, Fire Aspect III</td></tr>
+<tr><td><a class="item-link" href="objet-epee-argent-lunaire.html">Épée d’argent lunaire</a></td><td><a class="item-link" href="https://minecraft.wiki/w/Sword">Épée en fer</a></td><td>Sharpness III, Smite II, Sweeping Edge IV, Looting II</td></tr>
+<tr><td><a class="item-link" href="objet-glaive-lunaire.html">Glaive lunaire</a></td><td><a class="item-link" href="https://minecraft.wiki/w/Sword">Épée en fer</a></td><td>Sharpness V, Smite II, Sweeping Edge IV, Looting III, Fire Aspect I</td></tr>
+<tr><td><a class="item-link" href="objet-lame-nuit.html">Lame de la nuit</a></td><td><a class="item-link" href="https://minecraft.wiki/w/Sword">Épée en diamant</a></td><td>Sharpness V, Smite III, Sweeping Edge IV, Looting III, Fire Aspect II</td></tr>
+<tr><td><a class="item-link" href="objet-clairetoile.html">Clairétoile</a></td><td><a class="item-link" href="https://minecraft.wiki/w/Sword">Épée en netherite</a></td><td>Sharpness VII, Smite IV, Bane of Arthropods III (Fléau des arthropodes), Sweeping Edge IV, Looting IV, Fire Aspect III</td></tr>
 </tbody></table></div>
 <div class="table-scroll"><table>
 <caption>Famille de fer-sang</caption>
 <thead><tr><th>Arme</th><th>Base</th><th>Autres enchantements</th></tr></thead>
 <tbody>
-<tr><td>Hache de Fer-Sanglant</td><td>Hache en fer</td><td>Sharpness IV, Smite I</td></tr>
-<tr><td>Écorchefer</td><td>Hache en fer</td><td>Sharpness V, Smite I</td></tr>
-<tr><td>Fendoir du Ravageur</td><td>Hache en diamant</td><td>Sharpness VI, Smite I</td></tr>
-<tr><td>Souffrechair</td><td>Hache en netherite</td><td>Sharpness IX, Smite I, Fire Aspect I</td></tr>
+<tr><td><a class="item-link" href="objet-hache-fer-sanglant.html">Hache de Fer-Sanglant</a></td><td><a class="item-link" href="https://minecraft.wiki/w/Axe">Hache en fer</a></td><td>Sharpness IV, Smite I</td></tr>
+<tr><td><a class="item-link" href="objet-ecorchefer.html">Écorchefer</a></td><td><a class="item-link" href="https://minecraft.wiki/w/Axe">Hache en fer</a></td><td>Sharpness V, Smite I</td></tr>
+<tr><td><a class="item-link" href="objet-fendoir-ravageur.html">Fendoir du Ravageur</a></td><td><a class="item-link" href="https://minecraft.wiki/w/Axe">Hache en diamant</a></td><td>Sharpness VI, Smite I</td></tr>
+<tr><td><a class="item-link" href="objet-souffrechair.html">Souffrechair</a></td><td><a class="item-link" href="https://minecraft.wiki/w/Axe">Hache en netherite</a></td><td>Sharpness IX, Smite I, Fire Aspect I</td></tr>
 </tbody></table></div>
 <div class="table-scroll"><table>
-<caption>Famille de lumière — tous sur une base d’arc</caption>
+<caption>Famille de lumière — tous sur une base d’<a class="item-link" href="https://minecraft.wiki/w/Bow">arc</a></caption>
 <thead><tr><th>Arme</th><th>Autres enchantements</th></tr></thead>
 <tbody>
-<tr><td>Éclat de l’aurore</td><td>Power IV, Infinity</td></tr>
-<tr><td>Trait de lumière</td><td>Power V, Infinity</td></tr>
-<tr><td>Arc des flammes</td><td>Power VI, Infinity, Flame</td></tr>
-<tr><td>Soléclat</td><td>Power VIII, Infinity, Flame</td></tr>
+<tr><td><a class="item-link" href="objet-eclat-aurore.html">Éclat de l’aurore</a></td><td>Power IV, Infinity</td></tr>
+<tr><td><a class="item-link" href="objet-trait-lumiere.html">Trait de lumière</a></td><td>Power V, Infinity</td></tr>
+<tr><td><a class="item-link" href="objet-arc-flammes.html">Arc des flammes</a></td><td>Power VI, Infinity, Flame</td></tr>
+<tr><td><a class="item-link" href="objet-soleclat.html">Soléclat</a></td><td>Power VIII, Infinity, Flame</td></tr>
 </tbody></table></div>
 
 <h2 id="entretien">Entretien et limites</h2>
-<p>Les armes uniques ne peuvent pas être fusionnées, réparées ou renommées à l’enclume, désenchantées à la meule, ni modifiées à la table d’enchantement. <strong>Mending continue de les réparer avec l’expérience.</strong> Elles ne participent à aucune autre recette que leur amélioration prévue.</p>
-<p>Pour les objets ordinaires compatibles, un livre au-dessus de la limite habituelle conserve son niveau à l’enclume. Deux livres Tranchant VI restent au niveau VI : ils ne produisent pas de niveau VII. Deux livres Tranchant V ne créent pas de niveau VI. Les coûts et compatibilités habituels restent applicables.</p>
+<p>Les armes uniques ne peuvent pas être fusionnées, réparées ou renommées à l’<a class="item-link" href="https://minecraft.wiki/w/Anvil">enclume</a>, désenchantées à la <a class="item-link" href="https://minecraft.wiki/w/Grindstone">meule</a>, ni modifiées à la <a class="item-link" href="https://minecraft.wiki/w/Enchanting_Table">table d’enchantement</a>. <strong>Mending continue de les réparer avec l’expérience.</strong> Elles ne participent à aucune autre recette que leur amélioration prévue.</p>
+<p>Pour les objets ordinaires compatibles, un livre au-dessus de la limite habituelle conserve son niveau à l’<a class="item-link" href="https://minecraft.wiki/w/Anvil">enclume</a>. Deux livres Tranchant VI restent au niveau VI : ils ne produisent pas de niveau VII. Deux livres Tranchant V ne créent pas de niveau VI. Les coûts et compatibilités habituels restent applicables.</p>
 </article>
       <footer class="article-footer">Wiki de HardcoreFamiliaReborn · <a href="index.html">Accueil</a> · <a href="#article">Haut de page</a></footer>
     </main>

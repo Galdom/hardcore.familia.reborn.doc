@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Catalogue des treize rituels : ingrédients, niveaux, conditions et effets.">
-  <meta name="color-scheme" content="light">
+  <meta name="color-scheme" content="light dark">
+  <script src="assets/theme.js"></script>
   <title>Rituels — Wiki HardcoreFamiliaReborn</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/wiki.css">
@@ -15,11 +16,20 @@
   <a class="skip-link" href="#article">Aller au contenu</a>
   <header class="site-header">
     <a class="wordmark" href="index.html">HardcoreFamiliaReborn <span>Le wiki des joueurs</span></a>
-    <form class="search" action="recherche.html" role="search">
-      <label class="visually-hidden" for="search">Rechercher dans le wiki</label>
-      <input id="search" name="q" type="search" placeholder="Rechercher dans le wiki" maxlength="200">
-      <button type="submit">Rechercher</button>
-    </form>
+    <div class="header-controls">
+      <form class="search" action="recherche.html" role="search">
+        <label class="visually-hidden" for="search">Rechercher dans le wiki</label>
+        <input id="search" name="q" type="search" placeholder="Rechercher dans le wiki" maxlength="200">
+        <button type="submit">Rechercher</button>
+      </form>
+      <label class="theme-picker" hidden>Thème
+        <select id="theme">
+          <option value="system">Système</option>
+          <option value="light">Clair</option>
+          <option value="dark">Sombre</option>
+        </select>
+      </label>
+    </div>
   </header>
   <div class="layout">
     <aside class="sidebar"><details open><summary>Navigation</summary><nav aria-label="Articles du wiki"><ul><li><a href="index.html">Accueil</a></li>
@@ -39,68 +49,68 @@
       <h1>Rituels</h1>
       <p class="subtitle">De HardcoreFamiliaReborn, le wiki des joueurs.</p>
       <nav class="toc" aria-label="Sommaire"><strong>Sommaire</strong><ul><li class="toc-h2"><a href="#fonctionnement">Fonctionnement</a></li><li class="toc-h2"><a href="#resurrection">Résurrection — niveau 1</a></li><li class="toc-h2"><a href="#reparation">Réparation — niveau 1</a></li><li class="toc-h2"><a href="#soleil">Lever et coucher du soleil — niveau 1</a></li><li class="toc-h2"><a href="#eclats">Arracher les éclats d’âmes — niveaux 1 à 3</a></li><li class="toc-h2"><a href="#revigoration">Revigoration — niveau 2</a></li><li class="toc-h2"><a href="#purification">Purification — niveau 2</a></li><li class="toc-h2"><a href="#pleine-lune">Pleine lune — niveau 2</a></li><li class="toc-h2"><a href="#cadre-end">Conjurer un cadre de portail de l’End — niveau 2</a></li><li class="toc-h2"><a href="#resistance">Résistance — niveau 2</a></li><li class="toc-h2"><a href="#force-draconique">Force draconique — niveau 3</a></li></ul></nav>
-      <article><p>Les <strong>rituels</strong> permettent de ressusciter, soigner, modifier le temps ou créer des ressources. Leur pratique demande le <a href="don.html">Don</a>, l’apprentissage de la page correspondante, un <a href="objets.html#grimoire">grimoire</a> et une <a href="constructions.html">construction</a> de niveau suffisant.</p>
+      <article><p>Les <strong>rituels</strong> permettent de ressusciter, soigner, modifier le temps ou créer des ressources. Leur pratique demande le <a href="don.html">Don</a>, l’apprentissage de la page correspondante, un <a class="item-link" href="objet-grimoire.html">grimoire</a> et une <a href="constructions.html">construction</a> de niveau suffisant.</p>
 
 <h2 id="fonctionnement">Fonctionnement</h2>
-<p>Faire un clic droit avec le grimoire sur le feu de camp du cercle. Le catalogue présente uniquement les rituels appris, rangés par niveau. Les ingrédients sont comptés dans tout l’inventaire, main secondaire comprise. Les conditions en vert sont réunies ; celles en rouge restent à satisfaire.</p>
+<p>Faire un clic droit avec le <a class="item-link" href="objet-grimoire.html">grimoire</a> sur le <a class="item-link" href="https://minecraft.wiki/w/Campfire">feu de camp</a> du cercle. Le catalogue présente uniquement les rituels appris, rangés par niveau. Les ingrédients sont comptés dans tout l’inventaire, main secondaire comprise. Les conditions en vert sont réunies ; celles en rouge restent à satisfaire.</p>
 <p>Une construction de niveau 3 permet aussi les rituels de niveaux 1 et 2. Les objets personnalisés demandés ne peuvent pas être remplacés par leur matériau Minecraft ou un objet renommé. Les prérequis sont revérifiés au lancement.</p>
 
 <h2 id="resurrection">Résurrection — niveau 1</h2>
-<p><strong>Coût :</strong> 1 Âme, 8 os et 4 chairs putréfiées. <strong>Condition :</strong> nuit de pleine lune dans le monde du cercle.</p>
-<p>Choisir dans le menu un joueur connecté en mode spectateur, même s’il est dans un autre monde. Il revient en Survie sur une case libre près du feu de camp, avec sa vie remplie jusqu’à sa nouvelle limite.</p>
+<p><strong>Coût :</strong> 1 <a class="item-link" href="objet-ame.html">Âme</a>, 8 <a class="item-link" href="https://minecraft.wiki/w/Bone">os</a> et 4 <a class="item-link" href="https://minecraft.wiki/w/Rotten_Flesh">chairs putréfiées</a>. <strong>Condition :</strong> nuit de pleine lune dans le monde du cercle.</p>
+<p>Choisir dans le menu un joueur connecté en mode spectateur, même s’il est dans un autre monde. Il revient en Survie sur une case libre près du <a class="item-link" href="https://minecraft.wiki/w/Campfire">feu de camp</a>, avec sa vie remplie jusqu’à sa nouvelle limite.</p>
 <p><strong>Chaque résurrection retire un cœur de vie maximale de base</strong>, avec un minimum d’un cœur. Un éclair visuel apparaît et un orage commence. Sans fantôme disponible ou si l’arrivée est impossible, aucun ingrédient n’est consommé.</p>
 
 <h2 id="reparation">Réparation — niveau 1</h2>
-<p><strong>Coût :</strong> 10 lingots de cuivre, 4 lingots de fer, 1 éclat d’améthyste et 3 diamants.</p>
+<p><strong>Coût :</strong> 10 <a class="item-link" href="https://minecraft.wiki/w/Copper_Ingot">lingots de cuivre</a>, 4 <a class="item-link" href="https://minecraft.wiki/w/Iron_Ingot">lingots de fer</a>, 1 <a class="item-link" href="https://minecraft.wiki/w/Amethyst_Shard">éclat d’améthyste</a> et 3 <a class="item-link" href="https://minecraft.wiki/w/Diamond">diamants</a>.</p>
 <p>Restaure toute la durabilité d’un objet endommagé choisi <strong>au hasard</strong> dans l’inventaire de l’officiant, équipement et main secondaire compris. Sans objet endommagé, les ingrédients sont rendus.</p>
 
 <h2 id="soleil">Lever et coucher du soleil — niveau 1</h2>
 <div class="table-scroll"><table>
 <thead><tr><th>Rituel</th><th>Coût</th><th>Effet</th></tr></thead>
 <tbody>
-<tr><td>Lever du soleil</td><td>5 poudres d’os, 2 baies lumineuses, 1 tournesol</td><td>Avance jusqu’au début du jour suivant.</td></tr>
-<tr><td>Coucher du soleil</td><td>5 poudres d’os, 3 poches d’encre ordinaires, 1 perle de l’Ender</td><td>Avance jusqu’au prochain coucher du soleil.</td></tr>
+<tr><td>Lever du soleil</td><td>5 <a class="item-link" href="https://minecraft.wiki/w/Bone_Meal">poudres d’os</a>, 2 <a class="item-link" href="https://minecraft.wiki/w/Glow_Berries">baies lumineuses</a>, 1 <a class="item-link" href="https://minecraft.wiki/w/Sunflower">tournesol</a></td><td>Avance jusqu’au début du jour suivant.</td></tr>
+<tr><td>Coucher du soleil</td><td>5 <a class="item-link" href="https://minecraft.wiki/w/Bone_Meal">poudres d’os</a>, 3 <a class="item-link" href="https://minecraft.wiki/w/Ink_Sac">poches d’encre ordinaires</a>, 1 <a class="item-link" href="https://minecraft.wiki/w/Ender_Pearl">perle de l’Ender</a></td><td>Avance jusqu’au prochain coucher du soleil.</td></tr>
 </tbody></table></div>
-<p>Aucune condition d’heure, de lune ou de météo. Seul le monde du feu de camp est concerné ; le temps avance sans reculer et la météo reste inchangée. Un moment déjà atteint est visé au jour suivant. Ces rituels échouent dans un monde sans horloge ; les ingrédients sont alors rendus.</p>
+<p>Aucune condition d’heure, de lune ou de météo. Seul le monde du <a class="item-link" href="https://minecraft.wiki/w/Campfire">feu de camp</a> est concerné ; le temps avance sans reculer et la météo reste inchangée. Un moment déjà atteint est visé au jour suivant. Ces rituels échouent dans un monde sans horloge ; les ingrédients sont alors rendus.</p>
 
 <h2 id="eclats">Arracher les éclats d’âmes — niveaux 1 à 3</h2>
 <p><strong>Condition :</strong> nuit dans le monde du cercle, entre les ticks 13 000 inclus et 23 000 exclus. Le Nether et l’End ne conviennent pas. Chaque variante s’apprend séparément.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>Niveau</th><th>Coût</th><th>Cibles maximum</th><th>Chance d’un éclat par cible tuée</th></tr></thead>
 <tbody>
-<tr><td>1</td><td>10 poudres d’os, 2 poudres à canon, 1 charbon de bois</td><td>3</td><td>1 sur 4</td></tr>
-<tr><td>2</td><td>10 poudres d’os, 2 poudres de blaze, 1 charbon</td><td>5</td><td>1 sur 3</td></tr>
-<tr><td>3</td><td>10 poudres d’os, 1 crème de magma</td><td>10</td><td>1 sur 2</td></tr>
+<tr><td>1</td><td>10 <a class="item-link" href="https://minecraft.wiki/w/Bone_Meal">poudres d’os</a>, 2 <a class="item-link" href="https://minecraft.wiki/w/Gunpowder">poudres à canon</a>, 1 <a class="item-link" href="https://minecraft.wiki/w/Charcoal">charbon de bois</a></td><td>3</td><td>1 sur 4</td></tr>
+<tr><td>2</td><td>10 <a class="item-link" href="https://minecraft.wiki/w/Bone_Meal">poudres d’os</a>, 2 <a class="item-link" href="https://minecraft.wiki/w/Blaze_Powder">poudres de blaze</a>, 1 <a class="item-link" href="https://minecraft.wiki/w/Coal">charbon</a></td><td>5</td><td>1 sur 3</td></tr>
+<tr><td>3</td><td>10 <a class="item-link" href="https://minecraft.wiki/w/Bone_Meal">poudres d’os</a>, 1 <a class="item-link" href="https://minecraft.wiki/w/Magma_Cream">crème de magma</a></td><td>10</td><td>1 sur 2</td></tr>
 </tbody></table></div>
 <p>Le rituel cible les morts-vivants les plus proches à <strong>8 blocs maximum</strong> du centre, hauteur comprise. Les joueurs et les autres créatures sont épargnés. Après environ deux secondes de flammes visuelles, chaque cible encore admissible meurt et peut laisser un éclat en plus de son butin habituel.</p>
-<p>Sans cible, aucun ingrédient n’est consommé. Avec moins de cibles que le maximum, le coût reste entier. Une cible tuée avant la fin ou devenue indisponible ne donne pas d’éclat et n’est pas remplacée ; les ingrédients ne sont pas remboursés. Charbon et charbon de bois ne sont pas interchangeables.</p>
+<p>Sans cible, aucun ingrédient n’est consommé. Avec moins de cibles que le maximum, le coût reste entier. Une cible tuée avant la fin ou devenue indisponible ne donne pas d’éclat et n’est pas remplacée ; les ingrédients ne sont pas remboursés. <a class="item-link" href="https://minecraft.wiki/w/Coal">Charbon</a> et <a class="item-link" href="https://minecraft.wiki/w/Charcoal">charbon de bois</a> ne sont pas interchangeables.</p>
 
 <h2 id="revigoration">Revigoration — niveau 2</h2>
-<p><strong>Coût :</strong> 8 pommes dorées ordinaires et 2 lingots d’argent. Aucune condition de lune ou d’heure.</p>
+<p><strong>Coût :</strong> 8 <a class="item-link" href="https://minecraft.wiki/w/Golden_Apple">pommes dorées ordinaires</a> et 2 <a class="item-link" href="objet-lingot-argent.html">lingots d’argent</a>. Aucune condition de lune ou d’heure.</p>
 <p>Choisir un joueur vivant, hors spectateur, dans le même monde et à <strong>strictement moins de 8 blocs</strong> du centre, hauteur comprise. Il doit avoir moins de dix cœurs de vie maximale de base. L’officiant peut se choisir lui-même.</p>
 <p>Le rituel restaure <strong>un cœur de vie maximale de base</strong>, jusqu’à dix, sans remplir la vie actuelle. Les ingrédients ne sont consommés qu’en cas de réussite. Le menu n’affiche pas les joueurs ayant déjà dix cœurs de base.</p>
 
 <h2 id="purification">Purification — niveau 2</h2>
-<p><strong>Coût :</strong> 1 Âme et 2 pommes dorées ordinaires. Aucune condition de lune ou d’heure.</p>
-<p>Guérit le vampirisme ou la lycanthropie de <strong>niveau 1 exactement</strong>. La cible doit être vivante, hors spectateur, dans le même monde et à strictement moins de 8 blocs du feu de camp. L’officiant peut se sélectionner.</p>
+<p><strong>Coût :</strong> 1 <a class="item-link" href="objet-ame.html">Âme</a> et 2 <a class="item-link" href="https://minecraft.wiki/w/Golden_Apple">pommes dorées ordinaires</a>. Aucune condition de lune ou d’heure.</p>
+<p>Guérit le vampirisme ou la lycanthropie de <strong>niveau 1 exactement</strong>. La cible doit être vivante, hors spectateur, dans le même monde et à strictement moins de 8 blocs du <a class="item-link" href="https://minecraft.wiki/w/Campfire">feu de camp</a>. L’officiant peut se sélectionner.</p>
 <p>La cible redevient humaine et perd sa malédiction et son niveau. Aucun coût n’est validé si la guérison échoue. Un vampire de niveau 2, 3 ou 4 ne peut pas être purifié.</p>
 
 <h2 id="pleine-lune">Pleine lune — niveau 2</h2>
-<p><strong>Coût :</strong> 1 lingot d’argent, 4 perles de l’Ender et 1 poche d’encre luisante.</p>
+<p><strong>Coût :</strong> 1 <a class="item-link" href="objet-lingot-argent.html">lingot d’argent</a>, 4 <a class="item-link" href="https://minecraft.wiki/w/Ender_Pearl">perles de l’Ender</a> et 1 <a class="item-link" href="https://minecraft.wiki/w/Glow_Ink_Sac">poche d’encre luisante</a>.</p>
 <p>Avance le monde du cercle au début de la prochaine nuit de pleine lune, au tick 13 000. Si ce début de nuit est déjà atteint ou dépassé le jour d’une pleine lune, la cible est la pleine lune du cycle suivant, huit jours plus tard. La météo ne change pas.</p>
 <p>Ce rituel ne demande aucune phase lunaire au départ. Les mondes sans lune, dont le Nether et l’End, ne conviennent pas. Les ingrédients sont rendus si le changement de temps échoue.</p>
 
-<h2 id="cadre-end">Conjurer un cadre de portail de l’End — niveau 2</h2>
-<p><strong>Coût :</strong> 5 pierres de l’End, 1 cristal de l’End et 1 perle de l’Ender.</p>
-<p>Fait apparaître un cadre de portail de l’End <strong>sans œil</strong> comme objet à ramasser, au-dessus du feu de camp. L’espace immédiatement au-dessus doit être de l’air. Le cadre flotte pour éviter les flammes, mais conserve le délai normal de disparition des objets.</p>
+<h2 id="cadre-end">Conjurer un <a class="item-link" href="https://minecraft.wiki/w/End_Portal_Frame">cadre de portail de l’End</a> — niveau 2</h2>
+<p><strong>Coût :</strong> 5 <a class="item-link" href="https://minecraft.wiki/w/End_Stone">pierres de l’End</a>, 1 <a class="item-link" href="https://minecraft.wiki/w/End_Crystal">cristal de l’End</a> et 1 <a class="item-link" href="https://minecraft.wiki/w/Ender_Pearl">perle de l’Ender</a>.</p>
+<p>Fait apparaître un <a class="item-link" href="https://minecraft.wiki/w/End_Portal_Frame">cadre de portail de l’End</a> <strong>sans œil</strong> comme objet à ramasser, au-dessus du <a class="item-link" href="https://minecraft.wiki/w/Campfire">feu de camp</a>. L’espace immédiatement au-dessus doit être de l’air. Le cadre flotte pour éviter les flammes, mais conserve le délai normal de disparition des objets.</p>
 <p>Aucune condition de dimension, d’heure ou de lune. Si l’objet ne peut pas apparaître, les ingrédients sont rendus.</p>
 
 <h2 id="resistance">Résistance — niveau 2</h2>
-<p><strong>Coût :</strong> 2 diamants, 16 rayons de miel et 4 pommes dorées.</p>
+<p><strong>Coût :</strong> 2 <a class="item-link" href="https://minecraft.wiki/w/Diamond">diamants</a>, 16 <a class="item-link" href="https://minecraft.wiki/w/Honeycomb">rayons de miel</a> et 4 <a class="item-link" href="https://minecraft.wiki/w/Golden_Apple">pommes dorées</a>.</p>
 <p>Accorde <strong>Résistance II pendant 20 minutes</strong> aux autres joueurs du même monde situés à strictement moins de 8 blocs du centre. L’officiant n’en bénéficie pas. Les joueurs encore sous la Résistance du rituel Force draconique sont exclus. Sans bénéficiaire, les ingrédients sont rendus.</p>
 
 <h2 id="force-draconique">Force draconique — niveau 3</h2>
-<p><strong>Coût :</strong> 8 souffles de dragon, 10 poudres de blaze et 12 poudres lumineuses.</p>
+<p><strong>Coût :</strong> 8 <a class="item-link" href="https://minecraft.wiki/w/Dragon%27s_Breath">souffles de dragon</a>, 10 <a class="item-link" href="https://minecraft.wiki/w/Blaze_Powder">poudres de blaze</a> et 12 <a class="item-link" href="https://minecraft.wiki/w/Glowstone_Dust">poudres lumineuses</a>.</p>
 <p>Accorde pendant <strong>20 minutes</strong> Résistance I, Régénération II, Résistance au feu et Force I aux autres joueurs du même monde situés à strictement moins de 8 blocs du centre. L’officiant et les joueurs encore sous Résistance II issue du rituel Résistance sont exclus.</p>
 <p>Ces deux rituels de protection ne se cumulent pas sur un même bénéficiaire tant que leur effet de Résistance est actif. Une Résistance provenant d’une autre source ne déclenche pas cette exclusion. Si personne ne peut recevoir l’effet Résistance, le coût est rendu. Un vampire ne peut pas recevoir Résistance au feu.</p>
 </article>

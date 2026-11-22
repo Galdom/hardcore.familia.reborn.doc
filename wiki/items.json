@@ -1,0 +1,333 @@
+[
+  {
+    "slug": "lingot-argent",
+    "title": "Lingot d’argent",
+    "guide": "objets.html#argent",
+    "description": "Se trouve dans certains temples, les cités antiques et les récompenses d’arène dès la vague 10. Sert au grimoire, à l’épée en argent et à deux rituels.",
+    "aliases": [
+      "lingots d’argent"
+    ]
+  },
+  {
+    "slug": "grimoire",
+    "title": "Grimoire des rituels",
+    "guide": "objets.html#grimoire",
+    "description": "Se fabrique avec un lingot d’argent et un livre ordinaire. Avec le Don, utiliser le grimoire sur le feu de camp d’un cercle complet ouvre les rituels appris.",
+    "aliases": [
+      "grimoire"
+    ]
+  },
+  {
+    "slug": "page-rituel",
+    "title": "Page de rituel",
+    "guide": "exploration.html#pages",
+    "description": "Les sorcières et certains coffres donnent des pages. Faire un clic droit avec la page en possédant le Don pour apprendre le rituel correspondant.",
+    "aliases": [
+      "pages de rituel",
+      "page de rituels",
+      "pages de rituels"
+    ]
+  },
+  {
+    "slug": "eclat-ame",
+    "title": "Éclat d’âme",
+    "guide": "rituels.html#eclats",
+    "description": "Les rituels d’extraction peuvent en faire tomber sur les morts-vivants. Neuf éclats forment une Âme. Un éclat sert aussi à fabriquer une fiole de sang exquise.",
+    "aliases": [
+      "éclats d’âme"
+    ]
+  },
+  {
+    "slug": "ame",
+    "title": "Âme",
+    "guide": "objets.html#ames",
+    "description": "Remplir la grille de fabrication avec neuf éclats d’âme pour obtenir une Âme. Elle sert aux rituels Résurrection et Purification."
+  },
+  {
+    "slug": "orbe-activation",
+    "title": "Orbe d’activation",
+    "guide": "objets.html#orbe",
+    "description": "Quatre quartz du Nether, quatre diamants et un éclat d’améthyste permettent de fabriquer cette orbe, utilisée sur l’autel d’une arène ouverte.",
+    "aliases": [
+      "orbes d’activation"
+    ]
+  },
+  {
+    "slug": "epee-argent",
+    "title": "Épée en argent",
+    "guide": "objets.html#epee-argent",
+    "description": "Fabriquée avec deux lingots d’argent et un bâton, cette épée inflige davantage de dégâts aux détenteurs du Don.",
+    "aliases": [
+      "épées en argent"
+    ]
+  },
+  {
+    "slug": "pieu",
+    "title": "Pieu",
+    "guide": "objets.html#pieu",
+    "description": "Trois bâtons superposés fabriquent un pieu. Un coup direct est mortel pour un vampire si rien n’empêche la mort. Le pieu se casse dès qu’un coup use sa durabilité.",
+    "aliases": [
+      "pieux"
+    ]
+  },
+  {
+    "slug": "potion-essence-magique",
+    "title": "Potion d’essence magique",
+    "guide": "objets.html#essence",
+    "description": "Une chance sur cinq d’en trouver dans un coffre de trésor enfoui. Boire la potion accorde le Don.",
+    "aliases": [
+      "potions d’essence magique"
+    ]
+  },
+  {
+    "slug": "eau-benite",
+    "title": "Eau bénite",
+    "guide": "objets.html#eau-benite",
+    "description": "À l’alambic, une pomme dorée ordinaire transforme jusqu’à trois fioles d’eau en Eau bénite. La boire affecte les vampires."
+  },
+  {
+    "slug": "eau-benite-lancable",
+    "title": "Eau bénite lançable",
+    "guide": "objets.html#eau-benite",
+    "description": "Ajouter de la poudre à canon à l’Eau bénite dans un alambic. Les éclaboussures embrasent les morts-vivants et les vampires et leur infligent Wither I.",
+    "aliases": [
+      "eaux bénites lançables"
+    ]
+  },
+  {
+    "slug": "sang-bouillonnant",
+    "title": "Fiole de sang bouillonnante",
+    "guide": "vampirisme.html#infection",
+    "description": "Se trouve dans les coffres de manoir forestier ou se fabrique à l’autel vampirique. Elle transforme un buveur sans malédiction en vampire.",
+    "aliases": [
+      "fioles de sang bouillonnantes",
+      "fiole bouillonnante",
+      "fioles bouillonnantes",
+      "sang bouillonnant"
+    ]
+  },
+  {
+    "slug": "sang-classique",
+    "title": "Fiole de sang",
+    "guide": "objets.html#sang",
+    "description": "Le sang récolté sur un animal ou un villageois à l’aide de la Dent de vampire remplit des fioles vides. Une fiole bue ajoute 40 points de réserve à un vampire.",
+    "aliases": [
+      "fiole de sang classique",
+      "sang classique",
+      "fioles de sang classique"
+    ]
+  },
+  {
+    "slug": "sang-exquis",
+    "title": "Fiole de sang exquise",
+    "guide": "objets.html#sang",
+    "description": "À l’autel, un vampire combine une fiole de sang et un éclat d’âme. La boire ajoute 180 points de réserve à un vampire.",
+    "aliases": [
+      "sang exquis",
+      "fioles de sang exquises",
+      "fiole exquise",
+      "fioles exquises"
+    ]
+  },
+  {
+    "slug": "sang-humain",
+    "title": "Fiole de sang humain",
+    "guide": "objets.html#sang",
+    "description": "Se récolte sur un joueur ou s’obtient à l’autel. La boire ajoute 240 points de réserve à un vampire. L’alambic permet de la transformer en Sang noir.",
+    "aliases": [
+      "sang humain",
+      "fioles de sang humain",
+      "fiole humaine",
+      "fioles humaines"
+    ]
+  },
+  {
+    "slug": "sang-noir",
+    "title": "Sang noir",
+    "guide": "objets.html#sang-noir",
+    "description": "Une chair putréfiée transforme jusqu’à trois fioles de sang humain à l’alambic. Un non-vampire qui en boit repousse les morsures pendant 10 minutes."
+  },
+  {
+    "slug": "dent-vampire",
+    "title": "Dent de vampire",
+    "guide": "vampirisme.html#dent",
+    "description": "Remise lors de l’infection, elle permet aux vampires de récolter ou de boire du sang. Un vampire qui ne porte aucune dent peut en récupérer une à l’autel.",
+    "aliases": [
+      "dents de vampire"
+    ]
+  },
+  {
+    "slug": "argent-lunaire",
+    "title": "Lingot d’argent lunaire",
+    "guide": "armes.html#depart",
+    "description": "Ingrédient d’arène de niveau 1. Deux lingots et un bâton fabriquent une Épée d’argent lunaire.",
+    "aliases": [
+      "lingots d’argent lunaire"
+    ]
+  },
+  {
+    "slug": "fer-sang",
+    "title": "Lingot de fer-sang",
+    "guide": "armes.html#depart",
+    "description": "Ingrédient d’arène de niveau 1. Trois lingots et deux bâtons fabriquent une Hache de Fer-Sanglant.",
+    "aliases": [
+      "lingots de fer-sang"
+    ]
+  },
+  {
+    "slug": "orbe-lumineuse",
+    "title": "Orbe lumineuse",
+    "guide": "armes.html#depart",
+    "description": "Ingrédient d’arène de niveau 1. Quatre orbes autour d’un arc fabriquent Éclat de l’aurore.",
+    "aliases": [
+      "orbes lumineuses"
+    ]
+  },
+  {
+    "slug": "fragment-lunaire",
+    "title": "Fragment lunaire",
+    "guide": "armes.html#forge",
+    "description": "Ingrédient d’arène de niveau 2. Sert à forger le Glaive lunaire."
+  },
+  {
+    "slug": "os-iridium",
+    "title": "Os d’iridium",
+    "guide": "armes.html#forge",
+    "description": "Ingrédient d’arène de niveau 2. Sert à forger Écorchefer."
+  },
+  {
+    "slug": "lumiere-bouteille",
+    "title": "Lumière en bouteille",
+    "guide": "armes.html#forge",
+    "description": "Ingrédient d’arène de niveau 2. Sert à forger Trait de lumière."
+  },
+  {
+    "slug": "vestige-nocturne",
+    "title": "Vestige nocturne",
+    "guide": "armes.html#forge",
+    "description": "Ingrédient d’arène de niveau 3. Sert à forger la Lame de la nuit."
+  },
+  {
+    "slug": "fer-sang-pur",
+    "title": "Fer-sang pur",
+    "guide": "armes.html#forge",
+    "description": "Ingrédient d’arène de niveau 3. Sert à forger le Fendoir du Ravageur."
+  },
+  {
+    "slug": "vestige-immole",
+    "title": "Vestige immolé",
+    "guide": "armes.html#forge",
+    "description": "Ingrédient d’arène de niveau 3. Sert à forger l’Arc des flammes."
+  },
+  {
+    "slug": "poussiere-etoiles",
+    "title": "Poussière d’étoiles",
+    "guide": "armes.html#forge",
+    "description": "Ingrédient d’arène de niveau 4. Sert à forger Clairétoile."
+  },
+  {
+    "slug": "sang-berserker",
+    "title": "Sang du berserker",
+    "guide": "armes.html#forge",
+    "description": "Ingrédient d’arène de niveau 4. Sert à forger Souffrechair."
+  },
+  {
+    "slug": "braise-eternelle",
+    "title": "Braise éternelle",
+    "guide": "armes.html#forge",
+    "description": "Ingrédient d’arène de niveau 4. Sert à forger Soléclat."
+  },
+  {
+    "slug": "amelioration-superieur",
+    "title": "Amélioration supérieur",
+    "guide": "armes.html#ameliorations",
+    "description": "Se fabrique avec une étoile du Nether et quatre quartz du Nether. Sert à passer une arme unique du premier au deuxième niveau.",
+    "aliases": [
+      "amélioration supérieure"
+    ]
+  },
+  {
+    "slug": "amelioration-mythique",
+    "title": "Amélioration mythique",
+    "guide": "armes.html#ameliorations",
+    "description": "Se fabrique avec une étoile du Nether et quatre éclats d’améthyste. Sert à passer une arme unique du deuxième au troisième niveau."
+  },
+  {
+    "slug": "amelioration-legendaire",
+    "title": "Amélioration légendaire",
+    "guide": "armes.html#ameliorations",
+    "description": "Se fabrique avec une étoile du Nether et quatre éclats d’écho. Sert à passer une arme unique du troisième au quatrième niveau."
+  },
+  {
+    "slug": "epee-argent-lunaire",
+    "title": "Épée d’argent lunaire",
+    "guide": "armes.html#depart",
+    "description": "Épée en fer enchantée de premier niveau. Se fabrique avec deux lingots d’argent lunaire et un bâton."
+  },
+  {
+    "slug": "glaive-lunaire",
+    "title": "Glaive lunaire",
+    "guide": "armes.html#forge",
+    "description": "Épée en fer enchantée de deuxième niveau. À la forge, combiner l’Épée d’argent lunaire, un Fragment lunaire et une Amélioration supérieur."
+  },
+  {
+    "slug": "lame-nuit",
+    "title": "Lame de la nuit",
+    "guide": "armes.html#forge",
+    "description": "Épée en diamant enchantée de troisième niveau. À la forge, combiner le Glaive lunaire, un Vestige nocturne et une Amélioration mythique."
+  },
+  {
+    "slug": "clairetoile",
+    "title": "Clairétoile",
+    "guide": "armes.html#forge",
+    "description": "Épée en netherite enchantée de quatrième niveau. À la forge, combiner la Lame de la nuit, une Poussière d’étoiles et une Amélioration légendaire."
+  },
+  {
+    "slug": "hache-fer-sanglant",
+    "title": "Hache de Fer-Sanglant",
+    "guide": "armes.html#depart",
+    "description": "Hache en fer enchantée de premier niveau. Se fabrique avec trois lingots de fer-sang et deux bâtons."
+  },
+  {
+    "slug": "ecorchefer",
+    "title": "Écorchefer",
+    "guide": "armes.html#forge",
+    "description": "Hache en fer enchantée de deuxième niveau. À la forge, combiner la Hache de Fer-Sanglant, un Os d’iridium et une Amélioration supérieur."
+  },
+  {
+    "slug": "fendoir-ravageur",
+    "title": "Fendoir du Ravageur",
+    "guide": "armes.html#forge",
+    "description": "Hache en diamant enchantée de troisième niveau. À la forge, combiner Écorchefer, du Fer-sang pur et une Amélioration mythique."
+  },
+  {
+    "slug": "souffrechair",
+    "title": "Souffrechair",
+    "guide": "armes.html#forge",
+    "description": "Hache en netherite enchantée de quatrième niveau. À la forge, combiner le Fendoir du Ravageur, du Sang du berserker et une Amélioration légendaire."
+  },
+  {
+    "slug": "eclat-aurore",
+    "title": "Éclat de l’aurore",
+    "guide": "armes.html#depart",
+    "description": "Arc enchanté de premier niveau. Se fabrique avec un arc ordinaire entouré de quatre orbes lumineuses."
+  },
+  {
+    "slug": "trait-lumiere",
+    "title": "Trait de lumière",
+    "guide": "armes.html#forge",
+    "description": "Arc enchanté de deuxième niveau. À la forge, combiner Éclat de l’aurore, une Lumière en bouteille et une Amélioration supérieur."
+  },
+  {
+    "slug": "arc-flammes",
+    "title": "Arc des flammes",
+    "guide": "armes.html#forge",
+    "description": "Arc enchanté de troisième niveau. À la forge, combiner Trait de lumière, un Vestige immolé et une Amélioration mythique."
+  },
+  {
+    "slug": "soleclat",
+    "title": "Soléclat",
+    "guide": "armes.html#forge",
+    "description": "Arc enchanté de quatrième niveau. À la forge, combiner l’Arc des flammes, une Braise éternelle et une Amélioration légendaire."
+  }
+]

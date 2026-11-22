@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Fabriquer les objets utiles, préparer les potions et réunir les ingrédients personnalisés.">
-  <meta name="color-scheme" content="light">
+  <meta name="color-scheme" content="light dark">
+  <script src="assets/theme.js"></script>
   <title>Objets et recettes — Wiki HardcoreFamiliaReborn</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/wiki.css">
@@ -15,11 +16,20 @@
   <a class="skip-link" href="#article">Aller au contenu</a>
   <header class="site-header">
     <a class="wordmark" href="index.html">HardcoreFamiliaReborn <span>Le wiki des joueurs</span></a>
-    <form class="search" action="recherche.html" role="search">
-      <label class="visually-hidden" for="search">Rechercher dans le wiki</label>
-      <input id="search" name="q" type="search" placeholder="Rechercher dans le wiki" maxlength="200">
-      <button type="submit">Rechercher</button>
-    </form>
+    <div class="header-controls">
+      <form class="search" action="recherche.html" role="search">
+        <label class="visually-hidden" for="search">Rechercher dans le wiki</label>
+        <input id="search" name="q" type="search" placeholder="Rechercher dans le wiki" maxlength="200">
+        <button type="submit">Rechercher</button>
+      </form>
+      <label class="theme-picker" hidden>Thème
+        <select id="theme">
+          <option value="system">Système</option>
+          <option value="light">Clair</option>
+          <option value="dark">Sombre</option>
+        </select>
+      </label>
+    </div>
   </header>
   <div class="layout">
     <aside class="sidebar"><details open><summary>Navigation</summary><nav aria-label="Articles du wiki"><ul><li><a href="index.html">Accueil</a></li>
@@ -38,67 +48,113 @@
       <div class="article-tab">Article</div>
       <h1>Objets et recettes</h1>
       <p class="subtitle">De HardcoreFamiliaReborn, le wiki des joueurs.</p>
-      <nav class="toc" aria-label="Sommaire"><strong>Sommaire</strong><ul><li class="toc-h2"><a href="#argent">Lingot d’argent</a></li><li class="toc-h2"><a href="#grimoire">Grimoire des rituels</a></li><li class="toc-h2"><a href="#ames">Éclat d’âme et Âme</a></li><li class="toc-h2"><a href="#orbe">Orbe d’activation</a></li><li class="toc-h2"><a href="#epee-argent">Épée en argent</a></li><li class="toc-h2"><a href="#pieu">Pieu</a></li><li class="toc-h2"><a href="#essence">Potion d’essence magique</a></li><li class="toc-h2"><a href="#eau-benite">Eau bénite</a></li><li class="toc-h2"><a href="#sang">Fioles de sang</a></li><li class="toc-h2"><a href="#sang-noir">Sang noir</a></li><li class="toc-h2"><a href="#materiaux">Ingrédients des armes et améliorations</a></li></ul></nav>
+      <nav class="toc" aria-label="Sommaire"><strong>Sommaire</strong><ul><li class="toc-h2"><a href="#argent">Lingot d’argent</a></li><li class="toc-h2"><a href="#grimoire">Grimoire des rituels</a></li><li class="toc-h2"><a href="#ames">Éclat d’âme et Âme</a></li><li class="toc-h2"><a href="#orbe">Orbe d’activation</a></li><li class="toc-h2"><a href="#epee-argent">Épée en argent</a></li><li class="toc-h2"><a href="#pieu">Pieu</a></li><li class="toc-h2"><a href="#essence">Potion d’essence magique</a></li><li class="toc-h2"><a href="#eau-benite">Eau bénite</a></li><li class="toc-h2"><a href="#sang">Fioles de sang</a></li><li class="toc-h2"><a href="#sang-noir">Sang noir</a></li><li class="toc-h2"><a href="#materiaux">Ingrédients des armes et améliorations</a></li><li class="toc-h2"><a href="#fiches">Fiches des objets personnalisés</a></li></ul></nav>
       <article><p>Les <strong>objets personnalisés</strong> servent à pratiquer les rituels, combattre et progresser. Leur nom ou leur matériau d’apparence ne suffit pas à les reproduire : un objet ordinaire renommé ne remplace jamais un ingrédient authentique.</p>
 
-<h2 id="argent">Lingot d’argent</h2>
-<p>Il se trouve dans les coffres des <a href="exploration.html#ressources">temples et cités antiques</a> et parmi les récompenses de <a href="mobarena.html#recompenses">Mob Arena</a> dès le premier palier vaincu. Il ne possède pas de recette et ne remplace pas un lingot de fer dans les transformations ordinaires.</p>
-<p>L’argent sert au grimoire, à l’épée en argent, à Revigoration et au rituel Pleine lune. Le <strong>Lingot d’argent lunaire</strong> est un autre objet, destiné aux armes uniques.</p>
+<h2 id="argent"><a class="item-link" href="objet-lingot-argent.html">Lingot d’argent</a></h2>
+<p>Il se trouve dans les <a class="item-link" href="https://minecraft.wiki/w/Chest">coffres</a> des <a href="exploration.html#ressources">temples et cités antiques</a> et parmi les récompenses de <a href="mobarena.html#recompenses">Mob Arena</a> dès le premier palier vaincu. Il ne possède pas de recette et ne remplace pas un <a class="item-link" href="https://minecraft.wiki/w/Iron_Ingot">lingot de fer</a> dans les transformations ordinaires.</p>
+<p>Le <a class="item-link" href="objet-lingot-argent.html">lingot d’argent</a> sert au <a class="item-link" href="objet-grimoire.html">grimoire</a>, à l’<a class="item-link" href="objet-epee-argent.html">épée en argent</a>, à Revigoration et au rituel Pleine lune. Le <strong><a class="item-link" href="objet-argent-lunaire.html">Lingot d’argent lunaire</a></strong> est un autre objet, destiné aux armes uniques.</p>
 
-<h2 id="grimoire">Grimoire des rituels</h2>
-<p><strong>Recette :</strong> 1 lingot d’argent et 1 livre ordinaire, sans disposition imposée dans la grille.</p>
-<p>Le grimoire ouvre le <a href="rituels.html">catalogue des rituels</a> avec un clic droit sur le feu de camp d’un cercle complet. Son utilisation demande le Don. Il n’apprend aucun rituel : les connaissances proviennent des pages et restent personnelles.</p>
+<h2 id="grimoire"><a class="item-link" href="objet-grimoire.html">Grimoire des rituels</a></h2>
+<p><strong>Recette :</strong> 1 <a class="item-link" href="objet-lingot-argent.html">lingot d’argent</a> et 1 <a class="item-link" href="https://minecraft.wiki/w/Book">livre ordinaire</a>, sans disposition imposée dans la grille.</p>
+<p>Le <a class="item-link" href="objet-grimoire.html">grimoire</a> ouvre le <a href="rituels.html">catalogue des rituels</a> avec un clic droit sur le <a class="item-link" href="https://minecraft.wiki/w/Campfire">feu de camp</a> d’un cercle complet. Son utilisation demande le Don. Il n’apprend aucun rituel : les connaissances proviennent des pages et restent personnelles.</p>
 
-<h2 id="ames">Éclat d’âme et Âme</h2>
-<p>Les éclats s’obtiennent grâce aux rituels <a href="rituels.html#eclats">Arracher les éclats d’âmes</a>. Remplir une grille de 3 × 3 avec <strong>neuf éclats d’âme</strong> fabrique une Âme.</p>
-<p>Une Âme sert notamment à Résurrection et Purification. Ces objets ne remplacent pas les larmes de ghast ou cristaux de prismarine ordinaires.</p>
+<h2 id="ames"><a class="item-link" href="objet-eclat-ame.html">Éclat d’âme</a> et <a class="item-link" href="objet-ame.html">Âme</a></h2>
+<p>Les éclats s’obtiennent grâce aux rituels <a href="rituels.html#eclats">Arracher les éclats d’âmes</a>. Remplir une grille de 3 × 3 avec <strong>neuf <a class="item-link" href="objet-eclat-ame.html">éclats d’âme</a></strong> fabrique une <a class="item-link" href="objet-ame.html">Âme</a>.</p>
+<p>Une <a class="item-link" href="objet-ame.html">Âme</a> sert notamment à Résurrection et Purification. Ces objets ne remplacent pas les <a class="item-link" href="https://minecraft.wiki/w/Ghast_Tear">larmes de ghast</a> ou <a class="item-link" href="https://minecraft.wiki/w/Prismarine_Crystals">cristaux de prismarine</a> ordinaires.</p>
 
-<h2 id="orbe">Orbe d’activation</h2>
-<p>Utiliser une Orbe d’activation sur l’autel d’une <a href="mobarena.html">arène ouverte</a> permet de lancer une partie. Une activation réussie consomme une orbe.</p>
+<h2 id="orbe"><a class="item-link" href="objet-orbe-activation.html">Orbe d’activation</a></h2>
+<p>Utiliser une <a class="item-link" href="objet-orbe-activation.html">Orbe d’activation</a> sur l’autel d’une <a href="mobarena.html">arène ouverte</a> permet de lancer une partie. Une activation réussie consomme une <a class="item-link" href="objet-orbe-activation.html">Orbe d’activation</a>.</p>
 <pre aria-label="Recette de l’orbe d’activation"><code>Q D Q
 D A D
 Q D Q</code></pre>
-<p><strong>Q</strong> : quartz du Nether ; <strong>D</strong> : diamant ; <strong>A</strong> : éclat d’améthyste. La recette demande donc 4 quartz, 4 diamants et 1 éclat d’améthyste.</p>
+<p><strong>Q</strong> : <a class="item-link" href="https://minecraft.wiki/w/Nether_Quartz">quartz du Nether</a> ; <strong>D</strong> : <a class="item-link" href="https://minecraft.wiki/w/Diamond">diamant</a> ; <strong>A</strong> : <a class="item-link" href="https://minecraft.wiki/w/Amethyst_Shard">éclat d’améthyste</a>. La recette demande donc 4 quartz, 4 <a class="item-link" href="https://minecraft.wiki/w/Diamond">diamants</a> et 1 <a class="item-link" href="https://minecraft.wiki/w/Amethyst_Shard">éclat d’améthyste</a>.</p>
 
-<h2 id="epee-argent">Épée en argent</h2>
-<p><strong>Recette :</strong> 2 lingots d’argent superposés au-dessus d’un bâton, comme une épée classique.</p>
-<p>Elle apporte 2 dégâts d’attaque de base et conserve la vitesse d’une épée en fer. Contre un détenteur du <a href="don.html">Don</a>, sa contribution aux dégâts passe à <strong>10</strong>. Les dégâts d’enchantement et les protections habituelles s’appliquent normalement.</p>
+<h2 id="epee-argent"><a class="item-link" href="objet-epee-argent.html">Épée en argent</a></h2>
+<p><strong>Recette :</strong> 2 <a class="item-link" href="objet-lingot-argent.html">lingots d’argent</a> superposés au-dessus d’un <a class="item-link" href="https://minecraft.wiki/w/Stick">bâton</a>, comme une épée classique.</p>
+<p>Elle apporte 2 dégâts d’attaque de base et conserve la vitesse d’une <a class="item-link" href="https://minecraft.wiki/w/Sword">épée en fer</a>. Contre un détenteur du <a href="don.html">Don</a>, sa contribution aux dégâts passe à <strong>10</strong>. Les dégâts d’enchantement et les protections habituelles s’appliquent normalement.</p>
 
-<h2 id="pieu">Pieu</h2>
-<p><strong>Recette :</strong> 3 bâtons ordinaires superposés dans une colonne de la table de fabrication.</p>
-<p>Le pieu possède les dégâts et la vitesse d’une épée en bois et se casse au premier coup qui use sa durabilité. Un <strong>coup direct contre un vampire est mortel</strong>, quel que soit son niveau, même avec une armure, Protection, Résistance ou de l’absorption ordinaires.</p>
-<p>Un bouclier, un totem ou une annulation du combat peut encore empêcher la mort. Le balayage ne déclenche pas l’effet. Faiblesse n’empêche pas cette riposte mortelle contre un vampire. Le pieu ne peut pas être réparé, renommé, enchanté ou fusionné.</p>
+<h2 id="pieu"><a class="item-link" href="objet-pieu.html">Pieu</a></h2>
+<p><strong>Recette :</strong> 3 <a class="item-link" href="https://minecraft.wiki/w/Stick">bâtons ordinaires</a> superposés dans une colonne de la <a class="item-link" href="https://minecraft.wiki/w/Crafting_Table">table de fabrication</a>.</p>
+<p>Le <a class="item-link" href="objet-pieu.html">pieu</a> possède les dégâts et la vitesse d’une <a class="item-link" href="https://minecraft.wiki/w/Sword">épée en bois</a> et se casse au premier coup qui use sa durabilité. Un <strong>coup direct contre un vampire est mortel</strong>, quel que soit son niveau, même avec une armure, Protection, Résistance ou de l’absorption ordinaires.</p>
+<p>Un <a class="item-link" href="https://minecraft.wiki/w/Shield">bouclier</a>, un <a class="item-link" href="https://minecraft.wiki/w/Totem_of_Undying">totem</a> ou une annulation du combat peut encore empêcher la mort. Le balayage ne déclenche pas l’effet. Faiblesse n’empêche pas cette riposte mortelle contre un vampire. Le <a class="item-link" href="objet-pieu.html">pieu</a> ne peut pas être réparé, renommé, enchanté ou fusionné.</p>
 
-<h2 id="essence">Potion d’essence magique</h2>
-<p>Cette potion accorde le <a href="don.html">Don</a> lorsqu’elle est bue. Elle peut être trouvée dans les trésors enfouis, avec une chance de 20 % par coffre. Elle ne possède ni recette de fabrication ni transformation d’alambic. Un détenteur du Don la consomme sans bénéfice supplémentaire.</p>
+<h2 id="essence"><a class="item-link" href="objet-potion-essence-magique.html">Potion d’essence magique</a></h2>
+<p>Cette potion accorde le <a href="don.html">Don</a> lorsqu’elle est bue. Elle peut être trouvée dans les trésors enfouis, avec une chance de 20 % par <a class="item-link" href="https://minecraft.wiki/w/Chest">coffre</a>. Elle ne possède ni recette de fabrication ni transformation d’<a class="item-link" href="https://minecraft.wiki/w/Brewing_Stand">alambic</a>. Un détenteur du Don la consomme sans bénéfice supplémentaire.</p>
 
-<h2 id="eau-benite">Eau bénite</h2>
-<p><strong>Alambic :</strong> 1 pomme dorée ordinaire transforme jusqu’à 3 fioles d’eau en Eau bénite. Ajouter ensuite 1 poudre à canon transforme jusqu’à 3 Eaux bénites en Eaux bénites lançables. La pomme dorée enchantée ne convient pas. L’alambic doit être alimenté normalement.</p>
-<p>L’Eau bénite lançable touche les morts-vivants et les vampires : <strong>Wither I pendant 5 secondes et feu pendant 10 secondes</strong>, sans réduction de durée selon la distance dans l’éclaboussure. Les autres joueurs et créatures sont épargnés. Le PvP désactivé empêche de toucher un autre joueur vampire.</p>
-<p>Boire l’Eau bénite inflige les mêmes effets à un vampire et n’a pas d’effet sur un autre joueur. Les immunités, protections et possibilités d’extinction restent applicables. Il n’existe pas de version persistante.</p>
+<h2 id="eau-benite"><a class="item-link" href="objet-eau-benite.html">Eau bénite</a></h2>
+<p><strong><a class="item-link" href="https://minecraft.wiki/w/Brewing_Stand">Alambic</a> :</strong> 1 <a class="item-link" href="https://minecraft.wiki/w/Golden_Apple">pomme dorée ordinaire</a> transforme jusqu’à 3 <a class="item-link" href="https://minecraft.wiki/w/Water_Bottle">fioles d’eau</a> en <a class="item-link" href="objet-eau-benite.html">Eau bénite</a>. Ajouter ensuite 1 <a class="item-link" href="https://minecraft.wiki/w/Gunpowder">poudre à canon</a> transforme jusqu’à 3 Eaux bénites en <a class="item-link" href="objet-eau-benite-lancable.html">Eaux bénites lançables</a>. La <a class="item-link" href="https://minecraft.wiki/w/Enchanted_Golden_Apple">pomme dorée enchantée</a> ne convient pas. L’<a class="item-link" href="https://minecraft.wiki/w/Brewing_Stand">alambic</a> doit être alimenté normalement.</p>
+<p>L’<a class="item-link" href="objet-eau-benite-lancable.html">Eau bénite lançable</a> touche les morts-vivants et les vampires : <strong>Wither I pendant 5 secondes et feu pendant 10 secondes</strong>, sans réduction de durée selon la distance dans l’éclaboussure. Les autres joueurs et créatures sont épargnés. Le PvP désactivé empêche de toucher un autre joueur vampire.</p>
+<p>Boire l’<a class="item-link" href="objet-eau-benite.html">Eau bénite</a> inflige les mêmes effets à un vampire et n’a pas d’effet sur un autre joueur. Les immunités, protections et possibilités d’extinction restent applicables. Il n’existe pas de version persistante.</p>
 
 <h2 id="sang">Fioles de sang</h2>
 <div class="table-scroll"><table>
 <thead><tr><th>Fiole</th><th>Obtention</th><th>Effet principal</th></tr></thead>
 <tbody>
-<tr><td>Sang bouillonnant</td><td>Un exemplaire garanti par coffre de butin de manoir forestier ; fabrication à l’autel par un vampire</td><td>Transforme un joueur sans malédiction en vampire de niveau 1. N’ajoute pas de réserve à un vampire existant.</td></tr>
-<tr><td>Sang classique</td><td>Récolte avec la Dent de vampire</td><td>+40 de réserve pour un vampire ; Nausée I et Faiblesse I pendant 1 minute pour un non-vampire.</td></tr>
-<tr><td>Sang exquis</td><td>Autel vampirique : 1 fiole de sang et 1 éclat d’âme</td><td>+180 de réserve pour un vampire ; Faiblesse I pendant 1 minute pour un non-vampire.</td></tr>
-<tr><td>Sang humain</td><td>Récolte sur un joueur avec la dent ; sacrifice d’un non-vampire à l’autel</td><td>+240 de réserve pour un vampire ; Nausée I et Faiblesse I pendant 1 minute pour un non-vampire.</td></tr>
+<tr><td><a class="item-link" href="objet-sang-bouillonnant.html">Sang bouillonnant</a></td><td>Un exemplaire garanti par <a class="item-link" href="https://minecraft.wiki/w/Chest">coffre</a> de butin de manoir forestier ; fabrication à l’autel par un vampire</td><td>Transforme un joueur sans malédiction en vampire de niveau 1. N’ajoute pas de réserve à un vampire existant.</td></tr>
+<tr><td><a class="item-link" href="objet-sang-classique.html">Sang classique</a></td><td>Récolte avec la <a class="item-link" href="objet-dent-vampire.html">Dent de vampire</a></td><td>+40 de réserve pour un vampire ; Nausée I et Faiblesse I pendant 1 minute pour un non-vampire.</td></tr>
+<tr><td><a class="item-link" href="objet-sang-exquis.html">Sang exquis</a></td><td>Autel vampirique : 1 <a class="item-link" href="objet-sang-classique.html">fiole de sang</a> et 1 <a class="item-link" href="objet-eclat-ame.html">éclat d’âme</a></td><td>+180 de réserve pour un vampire ; Faiblesse I pendant 1 minute pour un non-vampire.</td></tr>
+<tr><td><a class="item-link" href="objet-sang-humain.html">Sang humain</a></td><td>Récolte sur un joueur avec la <a class="item-link" href="objet-dent-vampire.html">Dent de vampire</a> ; sacrifice d’un non-vampire à l’autel</td><td>+240 de réserve pour un vampire ; Nausée I et Faiblesse I pendant 1 minute pour un non-vampire.</td></tr>
 </tbody></table></div>
-<p>Les trois fioles nourrissantes n’infectent pas. Leurs gains s’ajoutent à la réserve actuelle, même négative, sans dépasser 240. En boire une fait passer un vampire de niveau 1 au niveau 2. Dès le niveau 2, toute fiole de sang, y compris bouillonnante, donne Régénération II pendant 8 secondes ; les durées ne s’additionnent pas.</p>
-<p>Les nouveaux exemplaires de ces quatre fioles s’empilent jusqu’à 64 par variante. Chaque consommation laisse une bouteille vide. Voir le <a href="vampirisme.html#dent">drainage à la Dent de vampire</a> et les <a href="vampirisme.html#autel">coûts de l’autel</a>.</p>
+<p>Les trois fioles nourrissantes n’infectent pas. Leurs gains s’ajoutent à la réserve actuelle, même négative, sans dépasser 240. En boire une fait passer un vampire de niveau 1 au niveau 2. Dès le niveau 2, chacune des quatre variantes, donne Régénération II pendant 8 secondes ; les durées ne s’additionnent pas.</p>
+<p>Les nouveaux exemplaires de ces quatre fioles s’empilent jusqu’à 64 par variante. Chaque consommation laisse une <a class="item-link" href="https://minecraft.wiki/w/Glass_Bottle">bouteille vide</a>. Voir le <a href="vampirisme.html#dent">drainage à la Dent de vampire</a> et les <a href="vampirisme.html#autel">coûts de l’autel</a>.</p>
 
-<h2 id="sang-noir">Sang noir</h2>
-<p><strong>Alambic :</strong> 1 chair putréfiée transforme jusqu’à 3 fioles de sang humain en Sang noir. Il ne peut pas devenir lançable ou persistant.</p>
-<p>Pour un non-vampire, lycanthrope compris, le Sang noir donne Nausée I pendant 10 secondes et rend le sang répulsif pour les vampires pendant <strong>10 minutes</strong>. Une tentative de drainage avec la dent ne blesse pas le buveur et n’apporte aucun sang. Le vampire reçoit Wither II et Nausée I pendant 5 secondes, puis conserve Faiblesse II pendant 1 minute au total.</p>
+<h2 id="sang-noir"><a class="item-link" href="objet-sang-noir.html">Sang noir</a></h2>
+<p><strong><a class="item-link" href="https://minecraft.wiki/w/Brewing_Stand">Alambic</a> :</strong> 1 <a class="item-link" href="https://minecraft.wiki/w/Rotten_Flesh">chair putréfiée</a> transforme jusqu’à 3 <a class="item-link" href="objet-sang-humain.html">fioles de sang humain</a> en <a class="item-link" href="objet-sang-noir.html">Sang noir</a>. Il ne peut pas devenir lançable ou persistant.</p>
+<p>Pour un non-vampire, lycanthrope compris, le <a class="item-link" href="objet-sang-noir.html">Sang noir</a> donne Nausée I pendant 10 secondes et rend le sang répulsif pour les vampires pendant <strong>10 minutes</strong>. Une tentative de drainage avec la dent ne blesse pas le buveur et n’apporte aucun sang. Le vampire reçoit Wither II et Nausée I pendant 5 secondes, puis conserve Faiblesse II pendant 1 minute au total.</p>
 <p>La protection demeure après une tentative de morsure. Une nouvelle dose renouvelle les 10 minutes. Le délai s’écoule aussi hors ligne ; le lait et la mort ne retirent pas la protection.</p>
-<p>Un vampire qui boit du Sang noir reçoit Wither II et Nausée I pendant 20 secondes et Faiblesse II pendant 4 minutes, sans gain de sang, de niveau ou de régénération.</p>
+<p>Un vampire qui boit du <a class="item-link" href="objet-sang-noir.html">Sang noir</a> reçoit Wither II et Nausée I pendant 20 secondes et Faiblesse II pendant 4 minutes, sans gain de sang, de niveau ou de régénération.</p>
 
 <h2 id="materiaux">Ingrédients des armes et améliorations</h2>
-<p>Les douze ingrédients d’armes proviennent des récompenses garanties de <a href="mobarena.html#ingredients">boss d’arène</a>. Les trois améliorations se fabriquent avec une étoile du Nether au centre et quatre ingrédients identiques sur les côtés, coins vides : quartz pour Supérieur, éclats d’améthyste pour Mythique, éclats d’écho pour Légendaire.</p>
-<p>Les recettes détaillées et l’emploi de la table de forge figurent dans <a href="armes.html">Armes et améliorations</a>. Ces matériaux restent réservés à leurs recettes : ils ne remplacent pas leurs équivalents ordinaires et ne servent pas à boire, planter, allumer du feu ou poser de la redstone.</p>
-</article>
+<p>Les douze ingrédients d’armes proviennent des récompenses garanties de <a href="mobarena.html#ingredients">boss d’arène</a>. Les trois améliorations se fabriquent avec une <a class="item-link" href="https://minecraft.wiki/w/Nether_Star">étoile du Nether</a> au centre et quatre ingrédients identiques sur les côtés, coins vides. Utiliser du <a class="item-link" href="https://minecraft.wiki/w/Nether_Quartz">quartz du Nether</a> pour l’<a class="item-link" href="objet-amelioration-superieur.html">Amélioration supérieur</a>, des <a class="item-link" href="https://minecraft.wiki/w/Amethyst_Shard">éclats d’améthyste</a> pour l’<a class="item-link" href="objet-amelioration-mythique.html">Amélioration mythique</a> ou des <a class="item-link" href="https://minecraft.wiki/w/Echo_Shard">éclats d’écho</a> pour l’<a class="item-link" href="objet-amelioration-legendaire.html">Amélioration légendaire</a>.</p>
+<p>Les recettes détaillées et l’emploi de la <a class="item-link" href="https://minecraft.wiki/w/Smithing_Table">table de forge</a> figurent dans <a href="armes.html">Armes et améliorations</a>. Ces matériaux restent réservés à leurs recettes : ils ne remplacent pas leurs équivalents ordinaires et ne servent pas à boire, planter, allumer du feu ou poser de la <a class="item-link" href="https://minecraft.wiki/w/Redstone_Dust">redstone</a>.</p>
+<h2 id="fiches">Fiches des objets personnalisés</h2>
+<ul class="portal-list">
+<li><a class="item-link" href="objet-lingot-argent.html">Lingot d’argent</a></li>
+<li><a class="item-link" href="objet-grimoire.html">Grimoire des rituels</a></li>
+<li><a class="item-link" href="objet-page-rituel.html">Page de rituel</a></li>
+<li><a class="item-link" href="objet-eclat-ame.html">Éclat d’âme</a></li>
+<li><a class="item-link" href="objet-ame.html">Âme</a></li>
+<li><a class="item-link" href="objet-orbe-activation.html">Orbe d’activation</a></li>
+<li><a class="item-link" href="objet-epee-argent.html">Épée en argent</a></li>
+<li><a class="item-link" href="objet-pieu.html">Pieu</a></li>
+<li><a class="item-link" href="objet-potion-essence-magique.html">Potion d’essence magique</a></li>
+<li><a class="item-link" href="objet-eau-benite.html">Eau bénite</a></li>
+<li><a class="item-link" href="objet-eau-benite-lancable.html">Eau bénite lançable</a></li>
+<li><a class="item-link" href="objet-sang-bouillonnant.html">Fiole de sang bouillonnante</a></li>
+<li><a class="item-link" href="objet-sang-classique.html">Fiole de sang</a></li>
+<li><a class="item-link" href="objet-sang-exquis.html">Fiole de sang exquise</a></li>
+<li><a class="item-link" href="objet-sang-humain.html">Fiole de sang humain</a></li>
+<li><a class="item-link" href="objet-sang-noir.html">Sang noir</a></li>
+<li><a class="item-link" href="objet-dent-vampire.html">Dent de vampire</a></li>
+<li><a class="item-link" href="objet-argent-lunaire.html">Lingot d’argent lunaire</a></li>
+<li><a class="item-link" href="objet-fer-sang.html">Lingot de fer-sang</a></li>
+<li><a class="item-link" href="objet-orbe-lumineuse.html">Orbe lumineuse</a></li>
+<li><a class="item-link" href="objet-fragment-lunaire.html">Fragment lunaire</a></li>
+<li><a class="item-link" href="objet-os-iridium.html">Os d’iridium</a></li>
+<li><a class="item-link" href="objet-lumiere-bouteille.html">Lumière en bouteille</a></li>
+<li><a class="item-link" href="objet-vestige-nocturne.html">Vestige nocturne</a></li>
+<li><a class="item-link" href="objet-fer-sang-pur.html">Fer-sang pur</a></li>
+<li><a class="item-link" href="objet-vestige-immole.html">Vestige immolé</a></li>
+<li><a class="item-link" href="objet-poussiere-etoiles.html">Poussière d’étoiles</a></li>
+<li><a class="item-link" href="objet-sang-berserker.html">Sang du berserker</a></li>
+<li><a class="item-link" href="objet-braise-eternelle.html">Braise éternelle</a></li>
+<li><a class="item-link" href="objet-amelioration-superieur.html">Amélioration supérieur</a></li>
+<li><a class="item-link" href="objet-amelioration-mythique.html">Amélioration mythique</a></li>
+<li><a class="item-link" href="objet-amelioration-legendaire.html">Amélioration légendaire</a></li>
+<li><a class="item-link" href="objet-epee-argent-lunaire.html">Épée d’argent lunaire</a></li>
+<li><a class="item-link" href="objet-glaive-lunaire.html">Glaive lunaire</a></li>
+<li><a class="item-link" href="objet-lame-nuit.html">Lame de la nuit</a></li>
+<li><a class="item-link" href="objet-clairetoile.html">Clairétoile</a></li>
+<li><a class="item-link" href="objet-hache-fer-sanglant.html">Hache de Fer-Sanglant</a></li>
+<li><a class="item-link" href="objet-ecorchefer.html">Écorchefer</a></li>
+<li><a class="item-link" href="objet-fendoir-ravageur.html">Fendoir du Ravageur</a></li>
+<li><a class="item-link" href="objet-souffrechair.html">Souffrechair</a></li>
+<li><a class="item-link" href="objet-eclat-aurore.html">Éclat de l’aurore</a></li>
+<li><a class="item-link" href="objet-trait-lumiere.html">Trait de lumière</a></li>
+<li><a class="item-link" href="objet-arc-flammes.html">Arc des flammes</a></li>
+<li><a class="item-link" href="objet-soleclat.html">Soléclat</a></li>
+</ul></article>
       <footer class="article-footer">Wiki de HardcoreFamiliaReborn · <a href="index.html">Accueil</a> · <a href="#article">Haut de page</a></footer>
     </main>
   </div>

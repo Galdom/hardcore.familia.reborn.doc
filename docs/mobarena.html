@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Rejoindre une arène, affronter cinquante vagues et sortir avec les récompenses.">
-  <meta name="color-scheme" content="light">
+  <meta name="color-scheme" content="light dark">
+  <script src="assets/theme.js"></script>
   <title>Mob Arenas — Wiki HardcoreFamiliaReborn</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/wiki.css">
@@ -15,11 +16,20 @@
   <a class="skip-link" href="#article">Aller au contenu</a>
   <header class="site-header">
     <a class="wordmark" href="index.html">HardcoreFamiliaReborn <span>Le wiki des joueurs</span></a>
-    <form class="search" action="recherche.html" role="search">
-      <label class="visually-hidden" for="search">Rechercher dans le wiki</label>
-      <input id="search" name="q" type="search" placeholder="Rechercher dans le wiki" maxlength="200">
-      <button type="submit">Rechercher</button>
-    </form>
+    <div class="header-controls">
+      <form class="search" action="recherche.html" role="search">
+        <label class="visually-hidden" for="search">Rechercher dans le wiki</label>
+        <input id="search" name="q" type="search" placeholder="Rechercher dans le wiki" maxlength="200">
+        <button type="submit">Rechercher</button>
+      </form>
+      <label class="theme-picker" hidden>Thème
+        <select id="theme">
+          <option value="system">Système</option>
+          <option value="light">Clair</option>
+          <option value="dark">Sombre</option>
+        </select>
+      </label>
+    </div>
   </header>
   <div class="layout">
     <aside class="sidebar"><details open><summary>Navigation</summary><nav aria-label="Articles du wiki"><ul><li><a href="index.html">Accueil</a></li>
@@ -44,7 +54,7 @@
 <h2 id="rejoindre">Ouverture et participation</h2>
 <p>Le texte flottant au-dessus de l’autel indique le nom de l’arène et son état : <strong>Ouverte</strong>, <strong>Fermée</strong> ou <strong>Arène en cours</strong>. À chaque aube, une arène prête et fermée a <strong>10 % de chances</strong> de s’ouvrir. L’ouverture est annoncée dans le chat ; elle reste disponible jusqu’à son activation.</p>
 <ol>
-<li>Préparer armes, armure, nourriture, soins et une <a href="objets.html#orbe">Orbe d’activation</a>.</li>
+<li>Préparer armes, armure, nourriture, soins et une <a class="item-link" href="objet-orbe-activation.html">Orbe d’activation</a>.</li>
 <li>Rassembler les participants en Survie ou Aventure à <strong>moins de 10 blocs</strong> du centre de l’autel, hauteur comprise.</li>
 <li>Utiliser l’orbe sur l’autel ouvert. Une activation réussie consomme une orbe pour tout le groupe et téléporte les participants dans l’arène.</li>
 </ol>
@@ -53,8 +63,8 @@
 <h2 id="combat">Règles du combat</h2>
 <ul>
 <li>Le <strong>PvP est désactivé</strong> pendant la partie, y compris les projectiles et potions nocives entre joueurs.</li>
-<li>La casse, la pose de blocs, les seaux et les interactions avec les blocs sont interdits aux participants.</li>
-<li>Les monstres donnent de l’expérience, mais pas leur équipement ni leur butin d’objets. Leurs flèches ne sont pas récupérables.</li>
+<li>La casse, la pose de blocs, les <a class="item-link" href="https://minecraft.wiki/w/Bucket">seaux</a> et les interactions avec les blocs sont interdits aux participants.</li>
+<li>Les monstres donnent de l’expérience, mais pas leur équipement ni leur butin d’objets. Leurs <a class="item-link" href="https://minecraft.wiki/w/Arrow">flèches</a> ne sont pas récupérables.</li>
 <li>Les ennemis ne brûlent pas au soleil. Les explosions de creepers peuvent blesser les autres ennemis de la même partie.</li>
 <li>Les participants ne provoquent pas d’apparition de phantom liée à leur manque de sommeil pendant la partie.</li>
 </ul>
@@ -66,8 +76,8 @@
 <div class="table-scroll"><table>
 <thead><tr><th>Vague</th><th>Boss prévu</th><th>Particularités</th><th>Ouverture de sortie après victoire</th></tr></thead>
 <tbody>
-<tr><td>10</td><td>Zombie en fer</td><td>Armure en fer, hache en netherite Tranchant III ; aucun recul ; plus rapide.</td><td>30 secondes</td></tr>
-<tr><td>20</td><td>Squelette en cuivre</td><td>Armure en cuivre ; arc Puissance V, Frappe III, Flamme I.</td><td>30 secondes</td></tr>
+<tr><td>10</td><td>Zombie en fer</td><td>Armure en fer, <a class="item-link" href="https://minecraft.wiki/w/Axe">hache en netherite</a> Tranchant III ; aucun recul ; plus rapide.</td><td>30 secondes</td></tr>
+<tr><td>20</td><td>Squelette en cuivre</td><td>Armure en cuivre ; <a class="item-link" href="https://minecraft.wiki/w/Bow">arc</a> Puissance V, Frappe III, Flamme I.</td><td>30 secondes</td></tr>
 <tr><td>30</td><td>Slime géant</td><td>400 PV initiaux ; les descendants doivent tous être vaincus.</td><td>30 secondes</td></tr>
 <tr><td>40</td><td>Wither</td><td>400 PV ; capacités natives et tirs de crânes supplémentaires.</td><td>30 secondes</td></tr>
 <tr><td>50</td><td>Warden</td><td>400 PV ; mêlée et attaque sonique à dégâts divisés par deux après progression.</td><td>Sans limite de temps</td></tr>
@@ -78,7 +88,7 @@
 <p class="note"><strong>Les récompenses sont remises uniquement en traversant le portail de sortie ouvert.</strong> Vaincre un boss, même le dernier, ne les remet pas automatiquement.</p>
 <p>Le portail ressemble à une passerelle de l’End. Le traverser pendant l’ouverture ramène près de l’autel et termine la participation. Après les boss 10 à 40, il faut sortir dans les 30 secondes ou affronter la suite. Après le boss 50, il reste ouvert jusqu’au départ du dernier participant.</p>
 <p>Mourir, se déconnecter ou quitter les limites autrement, même par téléportation, retire le joueur de la partie <strong>sans récompense</strong>. Une déconnexion ne permet pas de reprendre le combat ; la reconnexion ramène près de l’autel. Un arrêt ou redémarrage du serveur termine les parties sans récompense.</p>
-<p>Les objets empilables sont regroupés dans des bundles fournis avec le butin. Livres enchantés et potions sont remis séparément. L’inventaire reçoit les gains et le surplus tombe aux pieds du joueur près de l’autel.</p>
+<p>Les objets empilables sont regroupés dans des <a class="item-link" href="https://minecraft.wiki/w/Bundle">bundles</a> fournis avec le butin. <a class="item-link" href="https://minecraft.wiki/w/Enchanted_Book">Livres enchantés</a> et potions sont remis séparément. L’inventaire reçoit les gains et le surplus tombe aux pieds du joueur près de l’autel.</p>
 
 <h2 id="recompenses">Récompenses ordinaires</h2>
 <div class="table-scroll"><table>
@@ -94,20 +104,20 @@
 <div class="table-scroll"><table>
 <thead><tr><th>Niveau</th><th>Récompense possible</th><th>Poids de tirage</th></tr></thead>
 <tbody>
-<tr><td>1</td><td>Lingot de fer</td><td>50</td></tr>
-<tr><td>1</td><td>Lingot d’argent</td><td>10</td></tr>
-<tr><td>1</td><td>Lingot d’or</td><td>35</td></tr>
-<tr><td>1</td><td>Diamant</td><td>20</td></tr>
-<tr><td>1</td><td>Pomme dorée</td><td>20</td></tr>
-<tr><td>1</td><td>Bouteille d’expérience</td><td>15</td></tr>
-<tr><td>2</td><td>Modèle d’amélioration en netherite</td><td>5</td></tr>
-<tr><td>2</td><td>Livre à enchantement aléatoire, niveau aléatoire jusqu’au maximum</td><td>10</td></tr>
-<tr><td>3</td><td>Livre à enchantement aléatoire au niveau maximum</td><td>5</td></tr>
-<tr><td>3</td><td>Modèle de garniture d’armure aléatoire</td><td>5</td></tr>
-<tr><td>3</td><td>Fragment de netherite</td><td>5</td></tr>
-<tr><td>4</td><td>Potion bénéfique aléatoire</td><td>5</td></tr>
-<tr><td>4</td><td>Pomme dorée enchantée</td><td>5</td></tr>
-<tr><td>5</td><td>Livre d’enchantement au niveau maximum + 1</td><td>2</td></tr>
+<tr><td>1</td><td><a class="item-link" href="https://minecraft.wiki/w/Iron_Ingot">Lingot de fer</a></td><td>50</td></tr>
+<tr><td>1</td><td><a class="item-link" href="objet-lingot-argent.html">Lingot d’argent</a></td><td>10</td></tr>
+<tr><td>1</td><td><a class="item-link" href="https://minecraft.wiki/w/Gold_Ingot">Lingot d’or</a></td><td>35</td></tr>
+<tr><td>1</td><td><a class="item-link" href="https://minecraft.wiki/w/Diamond">Diamant</a></td><td>20</td></tr>
+<tr><td>1</td><td><a class="item-link" href="https://minecraft.wiki/w/Golden_Apple">Pomme dorée</a></td><td>20</td></tr>
+<tr><td>1</td><td><a class="item-link" href="https://minecraft.wiki/w/Bottle_o%27_Enchanting">Bouteille d’expérience</a></td><td>15</td></tr>
+<tr><td>2</td><td><a class="item-link" href="https://minecraft.wiki/w/Smithing_Template">Modèle d’amélioration en netherite</a></td><td>5</td></tr>
+<tr><td>2</td><td><a class="item-link" href="https://minecraft.wiki/w/Enchanted_Book">Livre à enchantement aléatoire</a>, niveau aléatoire jusqu’au maximum</td><td>10</td></tr>
+<tr><td>3</td><td><a class="item-link" href="https://minecraft.wiki/w/Enchanted_Book">Livre à enchantement aléatoire</a> au niveau maximum</td><td>5</td></tr>
+<tr><td>3</td><td><a class="item-link" href="https://minecraft.wiki/w/Smithing_Template">Modèle de garniture d’armure</a> aléatoire</td><td>5</td></tr>
+<tr><td>3</td><td><a class="item-link" href="https://minecraft.wiki/w/Netherite_Scrap">Fragment de netherite</a></td><td>5</td></tr>
+<tr><td>4</td><td><a class="item-link" href="https://minecraft.wiki/w/Potion">Potion bénéfique aléatoire</a></td><td>5</td></tr>
+<tr><td>4</td><td><a class="item-link" href="https://minecraft.wiki/w/Enchanted_Golden_Apple">Pomme dorée enchantée</a></td><td>5</td></tr>
+<tr><td>5</td><td><a class="item-link" href="https://minecraft.wiki/w/Enchanted_Book">Livre d’enchantement</a> au niveau maximum + 1</td><td>2</td></tr>
 </tbody></table></div>
 <p>Un poids est une fréquence relative, pas un pourcentage. Parmi les récompenses éligibles, un poids de 20 est deux fois plus probable qu’un poids de 10. Aucun objet particulier n’est garanti par ces tirages.</p>
 <p>Les livres de niveau 5 choisissent parmi Efficacité, Fortune, Solidité, Tranchant, Châtiment, Protection, Butin et Puissance. Les potions peuvent donner vitesse, force, saut, régénération, résistance au feu, respiration aquatique, invisibilité, vision nocturne ou chute lente, au niveau I ou II, pour 5 à 30 minutes par pas de 5.</p>
@@ -121,10 +131,10 @@
 <div class="table-scroll"><table>
 <thead><tr><th>Niveau</th><th>Ingrédients possibles, à chances égales</th></tr></thead>
 <tbody>
-<tr><td>1</td><td>Lingot d’argent lunaire, Lingot de fer-sang, Orbe lumineuse</td></tr>
-<tr><td>2</td><td>Fragment lunaire, Os d’iridium, Lumière en bouteille</td></tr>
-<tr><td>3</td><td>Vestige nocturne, Fer-sang pur, Vestige immolé</td></tr>
-<tr><td>4</td><td>Poussière d’étoiles, Sang du berserker, Braise éternelle</td></tr>
+<tr><td>1</td><td><a class="item-link" href="objet-argent-lunaire.html">Lingot d’argent lunaire</a>, <a class="item-link" href="objet-fer-sang.html">Lingot de fer-sang</a>, <a class="item-link" href="objet-orbe-lumineuse.html">Orbe lumineuse</a></td></tr>
+<tr><td>2</td><td><a class="item-link" href="objet-fragment-lunaire.html">Fragment lunaire</a>, <a class="item-link" href="objet-os-iridium.html">Os d’iridium</a>, <a class="item-link" href="objet-lumiere-bouteille.html">Lumière en bouteille</a></td></tr>
+<tr><td>3</td><td><a class="item-link" href="objet-vestige-nocturne.html">Vestige nocturne</a>, <a class="item-link" href="objet-fer-sang-pur.html">Fer-sang pur</a>, <a class="item-link" href="objet-vestige-immole.html">Vestige immolé</a></td></tr>
+<tr><td>4</td><td><a class="item-link" href="objet-poussiere-etoiles.html">Poussière d’étoiles</a>, <a class="item-link" href="objet-sang-berserker.html">Sang du berserker</a>, <a class="item-link" href="objet-braise-eternelle.html">Braise éternelle</a></td></tr>
 </tbody></table></div>
 <p>Chaque palier tire son ingrédient indépendamment et peut donner le même qu’un autre palier. Ces matériaux permettent de fabriquer puis d’améliorer les <a href="armes.html">armes uniques</a>.</p>
 </article>

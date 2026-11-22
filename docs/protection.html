@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Verrouiller un coffre avec un panneau [Lock], inviter des joueurs et comprendre les zones protégées.">
-  <meta name="color-scheme" content="light">
+  <meta name="color-scheme" content="light dark">
+  <script src="assets/theme.js"></script>
   <title>Protection des biens — Wiki HardcoreFamiliaReborn</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/wiki.css">
@@ -15,11 +16,20 @@
   <a class="skip-link" href="#article">Aller au contenu</a>
   <header class="site-header">
     <a class="wordmark" href="index.html">HardcoreFamiliaReborn <span>Le wiki des joueurs</span></a>
-    <form class="search" action="recherche.html" role="search">
-      <label class="visually-hidden" for="search">Rechercher dans le wiki</label>
-      <input id="search" name="q" type="search" placeholder="Rechercher dans le wiki" maxlength="200">
-      <button type="submit">Rechercher</button>
-    </form>
+    <div class="header-controls">
+      <form class="search" action="recherche.html" role="search">
+        <label class="visually-hidden" for="search">Rechercher dans le wiki</label>
+        <input id="search" name="q" type="search" placeholder="Rechercher dans le wiki" maxlength="200">
+        <button type="submit">Rechercher</button>
+      </form>
+      <label class="theme-picker" hidden>Thème
+        <select id="theme">
+          <option value="system">Système</option>
+          <option value="light">Clair</option>
+          <option value="dark">Sombre</option>
+        </select>
+      </label>
+    </div>
   </header>
   <div class="layout">
     <aside class="sidebar"><details open><summary>Navigation</summary><nav aria-label="Articles du wiki"><ul><li><a href="index.html">Accueil</a></li>
@@ -39,11 +49,11 @@
       <h1>Protection des biens</h1>
       <p class="subtitle">De HardcoreFamiliaReborn, le wiki des joueurs.</p>
       <nav class="toc" aria-label="Sommaire"><strong>Sommaire</strong><ul><li class="toc-h2"><a href="#poser">Créer un verrou avec [Lock]</a></li><li class="toc-h2"><a href="#placement">Placement du panneau</a></li><li class="toc-h2"><a href="#equipements">Équipements concernés</a></li><li class="toc-h2"><a href="#droits">Droits et retrait du verrou</a></li><li class="toc-h2"><a href="#effets">Effets sur l’environnement</a></li><li class="toc-h2"><a href="#zones">Vivre dans une zone protégée</a></li></ul></nav>
-      <article><p>Les <strong>panneaux de verrouillage</strong> réservent l’accès à un équipement au propriétaire et à ses invités. Les zones protégées préservent les constructions, mais ne verrouillent pas automatiquement le contenu des coffres.</p>
+      <article><p>Les <strong>panneaux de verrouillage</strong> réservent l’accès à un équipement au propriétaire et à ses invités. Les zones protégées préservent les constructions, mais ne verrouillent pas automatiquement le contenu des <a class="item-link" href="https://minecraft.wiki/w/Chest">coffres</a>.</p>
 
 <h2 id="poser">Créer un verrou avec [Lock]</h2>
 <ol>
-<li>Fixer un panneau en bois <strong>directement sur le bloc à protéger</strong>.</li>
+<li>Fixer un <a class="item-link" href="https://minecraft.wiki/w/Sign">panneau en bois</a> <strong>directement sur le bloc à protéger</strong>.</li>
 <li>Écrire <code>[Lock]</code> sur la première ligne d’un côté du panneau.</li>
 <li>Inscrire au besoin un pseudo par ligne suivante, soit <strong>trois invités au maximum</strong>.</li>
 </ol>
@@ -56,39 +66,39 @@ Bob
 
 <h2 id="placement">Placement du panneau</h2>
 <ul>
-<li><strong>Panneau mural :</strong> protège le bloc sur lequel il est fixé, derrière lui.</li>
-<li><strong>Panneau posé :</strong> protège le bloc juste en dessous.</li>
-<li><strong>Panneau suspendu au plafond :</strong> protège le bloc juste au-dessus.</li>
-<li><strong>Panneau suspendu à une barre horizontale :</strong> nécessite exactement un support interactif latéral pour éviter toute ambiguïté.</li>
+<li><strong><a class="item-link" href="https://minecraft.wiki/w/Sign">Panneau mural</a> :</strong> protège le bloc sur lequel il est fixé, derrière lui.</li>
+<li><strong><a class="item-link" href="https://minecraft.wiki/w/Sign">Panneau posé</a> :</strong> protège le bloc juste en dessous.</li>
+<li><strong><a class="item-link" href="https://minecraft.wiki/w/Hanging_Sign">Panneau suspendu</a> au plafond :</strong> protège le bloc juste au-dessus.</li>
+<li><strong><a class="item-link" href="https://minecraft.wiki/w/Hanging_Sign">Panneau suspendu</a> à une barre horizontale :</strong> nécessite exactement un support interactif latéral pour éviter toute ambiguïté.</li>
 </ul>
 <p>Un panneau simplement posé à proximité ne verrouille rien. Un seul panneau et un seul côté de liste d’accès sont acceptés par équipement.</p>
 
 <h2 id="equipements">Équipements concernés</h2>
 <p>Les verrous prennent en charge notamment :</p>
 <ul>
-<li>Les coffres simples ou doubles, tonneaux, fours, hauts fourneaux, fumoirs, entonnoirs, distributeurs, droppers et boîtes de shulker.</li>
-<li>Les portes, trappes, portillons, boutons, leviers, plaques de pression et lits.</li>
-<li>Les établis, tables d’enchantement et de forge, enclumes, meules, métiers à tisser, tailleurs de pierre et tables de cartographie.</li>
-<li>Les coffres de l’Ender, balises, cloches, blocs musicaux, répéteurs, comparateurs et capteurs de lumière.</li>
-<li>Les composteurs, chaudrons, gâteaux, ancres de réapparition, feux de camp, ruches, pots, bougies, buissons à baies et lianes des cavernes.</li>
-<li>Les coffres-forts, blocs suspects d’archéologie et œufs de dragon.</li>
+<li>Les <a class="item-link" href="https://minecraft.wiki/w/Chest">coffres simples</a> ou doubles, <a class="item-link" href="https://minecraft.wiki/w/Barrel">tonneaux</a>, <a class="item-link" href="https://minecraft.wiki/w/Furnace">fours</a>, <a class="item-link" href="https://minecraft.wiki/w/Blast_Furnace">hauts fourneaux</a>, <a class="item-link" href="https://minecraft.wiki/w/Smoker">fumoirs</a>, <a class="item-link" href="https://minecraft.wiki/w/Hopper">entonnoirs</a>, <a class="item-link" href="https://minecraft.wiki/w/Dispenser">distributeurs</a>, <a class="item-link" href="https://minecraft.wiki/w/Dropper">droppers</a> et <a class="item-link" href="https://minecraft.wiki/w/Shulker_Box">boîtes de shulker</a>.</li>
+<li>Les <a class="item-link" href="https://minecraft.wiki/w/Door">portes</a>, <a class="item-link" href="https://minecraft.wiki/w/Trapdoor">trappes</a>, <a class="item-link" href="https://minecraft.wiki/w/Fence_Gate">portillons</a>, <a class="item-link" href="https://minecraft.wiki/w/Button">boutons</a>, <a class="item-link" href="https://minecraft.wiki/w/Lever">leviers</a>, <a class="item-link" href="https://minecraft.wiki/w/Pressure_Plate">plaques de pression</a> et <a class="item-link" href="https://minecraft.wiki/w/Bed">lits</a>.</li>
+<li>Les <a class="item-link" href="https://minecraft.wiki/w/Crafting_Table">établis</a>, <a class="item-link" href="https://minecraft.wiki/w/Enchanting_Table">tables d’enchantement</a> et de forge, <a class="item-link" href="https://minecraft.wiki/w/Anvil">enclumes</a>, <a class="item-link" href="https://minecraft.wiki/w/Grindstone">meules</a>, <a class="item-link" href="https://minecraft.wiki/w/Loom">métiers à tisser</a>, <a class="item-link" href="https://minecraft.wiki/w/Stonecutter">tailleurs de pierre</a> et <a class="item-link" href="https://minecraft.wiki/w/Cartography_Table">tables de cartographie</a>.</li>
+<li>Les <a class="item-link" href="https://minecraft.wiki/w/Ender_Chest">coffres de l’Ender</a>, <a class="item-link" href="https://minecraft.wiki/w/Beacon">balises</a>, <a class="item-link" href="https://minecraft.wiki/w/Bell">cloches</a>, <a class="item-link" href="https://minecraft.wiki/w/Note_Block">blocs musicaux</a>, <a class="item-link" href="https://minecraft.wiki/w/Redstone_Repeater">répéteurs</a>, <a class="item-link" href="https://minecraft.wiki/w/Redstone_Comparator">comparateurs</a> et <a class="item-link" href="https://minecraft.wiki/w/Daylight_Detector">capteurs de lumière</a>.</li>
+<li>Les <a class="item-link" href="https://minecraft.wiki/w/Composter">composteurs</a>, <a class="item-link" href="https://minecraft.wiki/w/Cauldron">chaudrons</a>, <a class="item-link" href="https://minecraft.wiki/w/Cake">gâteaux</a>, <a class="item-link" href="https://minecraft.wiki/w/Respawn_Anchor">ancres de réapparition</a>, <a class="item-link" href="https://minecraft.wiki/w/Campfire">feux de camp</a>, <a class="item-link" href="https://minecraft.wiki/w/Beehive">ruches</a>, <a class="item-link" href="https://minecraft.wiki/w/Decorated_Pot">pots décorés</a>, <a class="item-link" href="https://minecraft.wiki/w/Flower_Pot">pots de fleurs</a>, <a class="item-link" href="https://minecraft.wiki/w/Candle">bougies</a>, <a class="item-link" href="https://minecraft.wiki/w/Sweet_Berry_Bush">buissons à baies</a> et <a class="item-link" href="https://minecraft.wiki/w/Cave_Vines">lianes des cavernes</a>.</li>
+<li>Les <a class="item-link" href="https://minecraft.wiki/w/Vault">coffres-forts</a>, <a class="item-link" href="https://minecraft.wiki/w/Suspicious_Block">blocs suspects d’archéologie</a> et <a class="item-link" href="https://minecraft.wiki/w/Dragon_Egg">œufs de dragon</a>.</li>
 </ul>
-<p>Un bloc décoratif sans interaction prise en charge, comme une pierre ou une planche, ne devient pas verrouillable. Les deux moitiés d’un double coffre, d’une porte ou d’un lit partagent la protection.</p>
+<p>Un bloc décoratif sans interaction prise en charge, comme une <a class="item-link" href="https://minecraft.wiki/w/Stone">pierre</a> ou une <a class="item-link" href="https://minecraft.wiki/w/Planks">planche</a>, ne devient pas verrouillable. Les deux moitiés d’un double <a class="item-link" href="https://minecraft.wiki/w/Chest">coffre</a>, d’une <a class="item-link" href="https://minecraft.wiki/w/Door">porte</a> ou d’un <a class="item-link" href="https://minecraft.wiki/w/Bed">lit</a> partagent la protection.</p>
 
 <h2 id="droits">Droits et retrait du verrou</h2>
 <p>Le propriétaire et les invités peuvent utiliser l’équipement. Les autres joueurs ne le peuvent pas, même en tenant un objet. Un accès retiré ferme aussi les fenêtres de conteneur déjà ouvertes.</p>
 <p><strong>Le bloc verrouillé est incassable pour tous tant que le verrou existe.</strong> Seul le propriétaire peut modifier les invités, casser le panneau ou supprimer le marqueur pour retirer la protection. Les invités ne peuvent pas modifier ni cirer le panneau.</p>
-<p>Pour déplacer son coffre, retirer d’abord son verrou. Les doubles coffres ne peuvent pas être raccordés à un coffre protégé par un autre joueur.</p>
+<p>Pour déplacer son <a class="item-link" href="https://minecraft.wiki/w/Chest">coffre</a>, retirer d’abord son verrou. Les doubles <a class="item-link" href="https://minecraft.wiki/w/Chest">coffres</a> ne peuvent pas être raccordés à un <a class="item-link" href="https://minecraft.wiki/w/Chest">coffre</a> protégé par un autre joueur.</p>
 
 <h2 id="effets">Effets sur l’environnement</h2>
-<p>Le verrou protège contre les explosions, le feu, les liquides, les pistons et les modifications par les entités. Les supports indispensables aux portes, lits et petits blocs attachés sont également protégés.</p>
-<p>Les transferts automatiques d’objets vers ou depuis un conteneur verrouillé, l’aspiration par un entonnoir verrouillé, les distributions et les changements de courant redstone du bloc sont bloqués. La cuisson normale d’un four continue.</p>
-<p>Un lit ou une ancre ne peut pas être activé dans une dimension où son utilisation provoquerait une explosion. L’œuf de dragon verrouillé ne se téléporte pas. Traverser une porte déjà ouverte reste possible.</p>
+<p>Le verrou protège contre les explosions, le feu, les liquides, les <a class="item-link" href="https://minecraft.wiki/w/Piston">pistons</a> et les modifications par les entités. Les supports indispensables aux <a class="item-link" href="https://minecraft.wiki/w/Door">portes</a>, <a class="item-link" href="https://minecraft.wiki/w/Bed">lits</a> et petits blocs attachés sont également protégés.</p>
+<p>Les transferts automatiques d’objets vers ou depuis un conteneur verrouillé, l’aspiration par un <a class="item-link" href="https://minecraft.wiki/w/Hopper">entonnoir</a> verrouillé, les distributions et les changements de courant <a class="item-link" href="https://minecraft.wiki/w/Redstone_Dust">redstone</a> du bloc sont bloqués. La cuisson normale d’un <a class="item-link" href="https://minecraft.wiki/w/Furnace">four</a> continue.</p>
+<p>Un <a class="item-link" href="https://minecraft.wiki/w/Bed">lit</a> ou une <a class="item-link" href="https://minecraft.wiki/w/Respawn_Anchor">ancre de réapparition</a> ne peut pas être activé dans une dimension où son utilisation provoquerait une explosion. L’<a class="item-link" href="https://minecraft.wiki/w/Dragon_Egg">œuf de dragon</a> verrouillé ne se téléporte pas. Traverser une <a class="item-link" href="https://minecraft.wiki/w/Door">porte</a> déjà ouverte reste possible.</p>
 
 <h2 id="zones">Vivre dans une zone protégée</h2>
-<p>Dans une zone protégée, seuls ses propriétaires peuvent construire, casser ou modifier les blocs et décorations. Les autres joueurs peuvent toutefois circuler, combattre et utiliser les équipements ordinaires, <strong>y compris ouvrir les coffres non verrouillés</strong>.</p>
+<p>Dans une zone protégée, seuls ses propriétaires peuvent construire, casser ou modifier les blocs et décorations. Les autres joueurs peuvent toutefois circuler, combattre et utiliser les équipements ordinaires, <strong>y compris ouvrir les <a class="item-link" href="https://minecraft.wiki/w/Chest">coffres</a> non verrouillés</strong>.</p>
 <p>Les protections de zone et les panneaux s’additionnent : être propriétaire d’une zone ne donne pas accès à l’équipement verrouillé de quelqu’un d’autre. Poser un verrou reste utile pour réserver un inventaire.</p>
-<p>Les explosions de TNT et de creepers peuvent encore blesser les entités, mais ne détruisent pas les blocs protégés. Le feu, les liquides, les pistons et les transformations naturelles ne modifient pas la zone. Les transferts automatiques d’inventaire affectant la zone sont bloqués, même pour ses propriétaires.</p>
+<p>Les explosions de <a class="item-link" href="https://minecraft.wiki/w/TNT">TNT</a> et de creepers peuvent encore blesser les entités, mais ne détruisent pas les blocs protégés. Le feu, les liquides, les <a class="item-link" href="https://minecraft.wiki/w/Piston">pistons</a> et les transformations naturelles ne modifient pas la zone. Les transferts automatiques d’inventaire affectant la zone sont bloqués, même pour ses propriétaires.</p>
 <p>Une zone a des limites en hauteur précises ; sa protection ne s’étend pas automatiquement du fond du monde jusqu’au ciel. Verrous et zones restent présents après les redémarrages.</p>
 </article>
       <footer class="article-footer">Wiki de HardcoreFamiliaReborn · <a href="index.html">Accueil</a> · <a href="#article">Haut de page</a></footer>

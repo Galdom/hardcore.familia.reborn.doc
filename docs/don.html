@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Obtenir le Don, apprendre des pages et accéder aux rituels.">
-  <meta name="color-scheme" content="light">
+  <meta name="color-scheme" content="light dark">
+  <script src="assets/theme.js"></script>
   <title>Le Don — Wiki HardcoreFamiliaReborn</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/wiki.css">
@@ -15,11 +16,20 @@
   <a class="skip-link" href="#article">Aller au contenu</a>
   <header class="site-header">
     <a class="wordmark" href="index.html">HardcoreFamiliaReborn <span>Le wiki des joueurs</span></a>
-    <form class="search" action="recherche.html" role="search">
-      <label class="visually-hidden" for="search">Rechercher dans le wiki</label>
-      <input id="search" name="q" type="search" placeholder="Rechercher dans le wiki" maxlength="200">
-      <button type="submit">Rechercher</button>
-    </form>
+    <div class="header-controls">
+      <form class="search" action="recherche.html" role="search">
+        <label class="visually-hidden" for="search">Rechercher dans le wiki</label>
+        <input id="search" name="q" type="search" placeholder="Rechercher dans le wiki" maxlength="200">
+        <button type="submit">Rechercher</button>
+      </form>
+      <label class="theme-picker" hidden>Thème
+        <select id="theme">
+          <option value="system">Système</option>
+          <option value="light">Clair</option>
+          <option value="dark">Sombre</option>
+        </select>
+      </label>
+    </div>
   </header>
   <div class="layout">
     <aside class="sidebar"><details open><summary>Navigation</summary><nav aria-label="Articles du wiki"><ul><li><a href="index.html">Accueil</a></li>
@@ -42,24 +52,24 @@
       <article><p>Le <strong>Don</strong> est la capacité qui permet d’apprendre et d’exécuter les <a href="rituels.html">rituels</a>. Il est conservé après la mort, une déconnexion et un redémarrage du serveur. Il ne possède pas de niveaux.</p>
 
 <h2 id="obtention">Obtenir le Don</h2>
-<h3 id="essence">Potion d’essence magique</h3>
-<p>Boire une <a href="objets.html#essence">Potion d’essence magique</a> accorde le Don. Chaque coffre de trésor enfoui a <strong>20 % de chances</strong> d’en contenir une. La potion ne se fabrique pas et ne se transforme pas dans un alambic.</p>
-<p>La consommation ne produit pas de message et laisse une fiole vide. Si le joueur possède déjà le Don, la potion est tout de même consommée sans effet supplémentaire.</p>
+<h3 id="essence"><a class="item-link" href="objet-potion-essence-magique.html">Potion d’essence magique</a></h3>
+<p>Boire une <a class="item-link" href="objet-potion-essence-magique.html">Potion d’essence magique</a> accorde le Don. Chaque <a class="item-link" href="https://minecraft.wiki/w/Chest">coffre</a> de trésor enfoui a <strong>20 % de chances</strong> d’en contenir une. La potion ne se fabrique pas et ne se transforme pas dans un <a class="item-link" href="https://minecraft.wiki/w/Brewing_Stand">alambic</a>.</p>
+<p>La consommation ne produit pas de message et laisse une <a class="item-link" href="https://minecraft.wiki/w/Glass_Bottle">fiole vide</a>. Si le joueur possède déjà le Don, la potion est tout de même consommée sans effet supplémentaire.</p>
 <h3 id="attribution">Attribution après une mort</h3>
 <p>Lorsqu’un joueur meurt et qu’aucun détenteur du Don n’existe, le Don peut être accordé au hasard à un autre joueur connecté, vivant et en Survie. Il faut au moins deux candidats éligibles ; le joueur qui vient de mourir est exclu.</p>
 <p>Si les candidats sont trop peu nombreux, l’attribution reste en attente et est réévaluée aux connexions suivantes. Une connexion seule ne déclenche pas cette attribution. Un détenteur mort ou déconnecté compte toujours comme détenteur et empêche un nouveau tirage.</p>
 <p>Le bénéficiaire reçoit le message « Vous avez reçu le Don. ». Les autres joueurs ne reçoivent pas d’annonce.</p>
 
 <h2 id="apprentissage">Apprendre des rituels</h2>
-<p>Faire un clic droit avec une page de rituel dans l’une ou l’autre main apprend ce rituel et consomme un exemplaire. Le Don est nécessaire. Une page déjà apprise reste dans l’inventaire.</p>
-<p>Les connaissances sont personnelles et persistent même après la perte du grimoire ou du Don. Aucun rituel n’est connu au départ. Les pages se trouvent dans <a href="exploration.html#pages">certains coffres</a> ou sur les sorcières tuées par un joueur ou son projectile, avec une chance de 5 % par sorcière.</p>
+<p>Faire un clic droit avec une <a class="item-link" href="objet-page-rituel.html">page de rituel</a> dans l’une ou l’autre main apprend ce rituel et consomme un exemplaire. Le Don est nécessaire. Une page déjà apprise reste dans l’inventaire.</p>
+<p>Les connaissances sont personnelles et persistent même après la perte du <a class="item-link" href="objet-grimoire.html">grimoire</a> ou du Don. Aucun rituel n’est connu au départ. Les pages se trouvent dans <a href="exploration.html#pages">certains coffres</a> ou sur les sorcières tuées par un joueur ou son projectile, avec une chance de 5 % par sorcière.</p>
 
 <h2 id="utilisation">Utiliser le Don</h2>
-<p>Le Don ne suffit pas à lancer un rituel. Il faut aussi connaître le rituel, tenir un <a href="objets.html#grimoire">Grimoire des rituels</a>, disposer d’une <a href="constructions.html">structure complète</a> du bon niveau et réunir les ingrédients et conditions demandés.</p>
-<p>Un clic droit avec le grimoire sur le feu de camp ouvre le catalogue. Sans le Don ou si la construction est incomplète, aucun menu ni message n’apparaît.</p>
+<p>Le Don ne suffit pas à lancer un rituel. Il faut aussi connaître le rituel, tenir un <a class="item-link" href="objet-grimoire.html">Grimoire des rituels</a>, disposer d’une <a href="constructions.html">structure complète</a> du bon niveau et réunir les ingrédients et conditions demandés.</p>
+<p>Un clic droit avec le <a class="item-link" href="objet-grimoire.html">grimoire</a> sur le <a class="item-link" href="https://minecraft.wiki/w/Campfire">feu de camp</a> ouvre le catalogue. Sans le Don ou si la construction est incomplète, aucun menu ni message n’apparaît.</p>
 
 <h2 id="risques">Risque particulier</h2>
-<p>L’<a href="objets.html#epee-argent">Épée en argent</a> est particulièrement efficace contre les détenteurs du Don : sa contribution aux dégâts d’attaque passe de 2 à 10. Les enchantements et les réductions d’armure continuent de s’appliquer.</p>
+<p>L’<a class="item-link" href="objet-epee-argent.html">Épée en argent</a> est particulièrement efficace contre les détenteurs du Don : sa contribution aux dégâts d’attaque passe de 2 à 10. Les enchantements et les réductions d’armure continuent de s’appliquer.</p>
 </article>
       <footer class="article-footer">Wiki de HardcoreFamiliaReborn · <a href="index.html">Accueil</a> · <a href="#article">Haut de page</a></footer>
     </main>

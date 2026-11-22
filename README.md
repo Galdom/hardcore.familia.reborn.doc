@@ -3,14 +3,16 @@
 Wiki en français consacré aux mécaniques de jeu : Don, rituels, constructions,
 objets, armes, vampirisme, lycanthropie, Mob Arenas, protections et exploration.
 Présentation sobre inspirée des encyclopédies, avec navigation, sommaires,
-tableaux, plans de construction et recherche locale insensible aux accents.
+tableaux, plans de construction, fiches d’objet, thème clair ou sombre et
+recherche locale insensible aux accents. Le réglage Système suit le navigateur.
 
 Dépôt : [Galdom/hardcore.familia.reborn.doc](https://github.com/Galdom/hardcore.familia.reborn.doc).
 
 ## Consulter le wiki
 
 Ouvrir `docs/index.html` directement dans un navigateur. Les articles et la
-recherche fonctionnent sans serveur, sans dépendance et sans connexion externe.
+recherche fonctionnent sans serveur et sans dépendance. Les liens vers le Minecraft Wiki
+s’ouvrent en ligne.
 
 Pour servir le site localement, depuis la racine du dépôt :
 
@@ -44,7 +46,9 @@ sous-dossier du dépôt. Conserver le fichier `docs/.nojekyll`.
 
 - `wiki/articles/` : articles sources en HTML, limités au contenu joueur.
 - `wiki/articles.json` : titres, descriptions et ordre de navigation.
-- `wiki/assets/` : feuille de style, recherche et favicon.
+- `wiki/items.json` : fiches des objets personnalisés et variantes de leurs noms.
+- `wiki/vanilla-items.json` : noms des objets Minecraft et destinations sur le Minecraft Wiki.
+- `wiki/assets/` : feuille de style, thème, recherche et favicon.
 - `wiki/build.py` : génération des pages complètes et de l’index de recherche.
 - `docs/` : résultat généré à publier et à conserver dans Git.
 
@@ -54,6 +58,7 @@ Après une modification :
 python3 wiki/build.py
 python3 wiki/check.py
 node --check docs/assets/wiki.js
+node --check docs/assets/theme.js
 ```
 
 Les scripts Python utilisent uniquement la bibliothèque standard. Modifier les
@@ -63,6 +68,10 @@ directe des fichiers générés sera remplacée à la génération suivante.
 Ajouter un `id` unique à chaque titre `h2` ou `h3` : ils alimentent le sommaire et
 permettent les liens vers une section. Entourer les tableaux d’un
 `<div class="table-scroll">` pour leur lecture sur téléphone.
+
+Le générateur relie les noms et leurs variantes dans le texte aux fiches
+correspondantes. Pour un terme ambigu, préciser le nom dans l’article ou ajouter
+un lien explicite. Les liens éditoriaux et les diagrammes en texte sont préservés.
 
 ## Périmètre éditorial
 

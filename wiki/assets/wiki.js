@@ -20,7 +20,7 @@
     const title = normalize(article.title);
     const text = normalize(`${article.title} ${article.description} ${article.text}`);
     if (!terms.every(term => text.includes(term))) return null;
-    return { ...article, score: terms.filter(term => title.includes(term)).length };
+    return { ...article, score: title === normalize(query) ? terms.length + 1 : terms.filter(term => title.includes(term)).length };
   }).filter(Boolean).sort((a, b) => b.score - a.score || a.title.localeCompare(b.title, "fr"));
 
   status.textContent = matches.length
