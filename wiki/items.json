@@ -32,7 +32,7 @@
     "slug": "eclat-ame",
     "title": "Éclat d’âme",
     "guide": "rituels.html#eclats",
-    "description": "Les rituels d’extraction peuvent en faire tomber sur les morts-vivants. Neuf éclats forment une Âme. Un éclat sert aussi à fabriquer une fiole de sang exquise.",
+    "description": "Chaque mort-vivant tué par le rituel d’extraction laisse un éclat, quel que soit le niveau du rituel. Quatre éclats d’âme forment une Âme. Un éclat sert aussi à fabriquer une fiole de sang exquise.",
     "aliases": [
       "éclats d’âme"
     ]
@@ -41,7 +41,7 @@
     "slug": "ame",
     "title": "Âme",
     "guide": "objets.html#ames",
-    "description": "Remplir la grille de fabrication avec neuf éclats d’âme pour obtenir une Âme. Elle sert aux rituels Résurrection et Purification."
+    "description": "Disposer quatre éclats d’âme en carré de 2 × 2 dans la grille de l’inventaire ou sur une table de fabrication. L’Âme sert aux rituels Résurrection et Purification."
   },
   {
     "slug": "orbe-activation",
