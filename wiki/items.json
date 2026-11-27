@@ -110,7 +110,7 @@
     "slug": "sang-classique",
     "title": "Fiole de sang",
     "guide": "objets.html#sang",
-    "description": "Le sang récolté sur un animal ou un villageois à l’aide de la Dent de vampire remplit des fioles vides. Une fiole bue ajoute 40 points de réserve à un vampire.",
+    "description": "Le sang récolté sur un animal ou un villageois à l’aide de la Dent de vampire remplit des fioles vides. Une fiole bue ajoute 80 points de réserve à un vampire.",
     "aliases": [
       "fiole de sang classique",
       "sang classique",
@@ -121,7 +121,7 @@
     "slug": "sang-exquis",
     "title": "Fiole de sang exquise",
     "guide": "objets.html#sang",
-    "description": "À l’autel, un vampire combine une fiole de sang et un éclat d’âme. La boire ajoute 180 points de réserve à un vampire.",
+    "description": "À l’autel, un vampire combine une fiole de sang et un éclat d’âme. La boire ajoute 360 points de réserve à un vampire.",
     "aliases": [
       "sang exquis",
       "fioles de sang exquises",
@@ -133,7 +133,7 @@
     "slug": "sang-humain",
     "title": "Fiole de sang humain",
     "guide": "objets.html#sang",
-    "description": "Se récolte sur un joueur ou s’obtient à l’autel. La boire ajoute 240 points de réserve à un vampire. L’alambic permet de la transformer en Sang noir.",
+    "description": "Se récolte sur un joueur ou s’obtient à l’autel. La boire ajoute 480 points de réserve à un vampire. L’alambic permet de la transformer en Sang noir.",
     "aliases": [
       "sang humain",
       "fioles de sang humain",
