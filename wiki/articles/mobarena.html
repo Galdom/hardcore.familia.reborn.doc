@@ -1,7 +1,7 @@
 <p>Une <strong>Mob Arena</strong> est un combat coopératif fermé comprenant jusqu’à <strong>50 vagues</strong>. Après chaque boss, les participants choisissent de sortir avec leur butin ou de poursuivre vers un palier plus difficile.</p>
 
 <h2 id="rejoindre">Ouverture et participation</h2>
-<p>Le texte flottant au-dessus de l’autel indique le nom de l’arène et son état : <strong>Ouverte</strong>, <strong>Fermée</strong> ou <strong>Arène en cours</strong>. À chaque aube, une arène prête et fermée a <strong>10 % de chances</strong> de s’ouvrir. L’ouverture est annoncée dans le chat ; elle reste disponible jusqu’à son activation.</p>
+<p>Le texte flottant au-dessus de l’autel indique le nom de l’arène et son état : <strong>Ouverte</strong>, <strong>Fermée</strong> ou <strong>Arène en cours</strong>. À chaque aube, chaque arène prête et fermée a <strong>25 % de chances</strong> de s’ouvrir. Le tirage est indépendant pour chaque arène. L’ouverture est annoncée dans le chat et l’arène reste disponible jusqu’à son activation.</p>
 <ol>
 <li>Préparer armes, armure, nourriture, soins et une <a href="objets.html#orbe">Orbe d’activation</a>.</li>
 <li>Rassembler les participants en Survie ou Aventure à <strong>moins de 10 blocs</strong> du centre de l’autel, hauteur comprise.</li>
@@ -17,11 +17,13 @@
 <li>Les monstres donnent de l’expérience, mais pas leur équipement ni leur butin d’objets. Leurs flèches ne sont pas récupérables.</li>
 <li>Les ennemis ne brûlent pas au soleil. Les explosions de creepers peuvent blesser les autres ennemis de la même partie.</li>
 <li>Les participants ne provoquent pas d’apparition de phantom liée à leur manque de sommeil pendant la partie.</li>
+<li>Dans une zone protégée, les participants peuvent combattre les ennemis et leurs montures, même sans être propriétaires de la zone.</li>
 </ul>
 <p>La difficulté est calculée avec l’effectif de départ. Elle ne diminue pas si des joueurs meurent ou quittent. La vie et les dégâts augmentent normalement de 2 % de leur valeur de référence par vague après la première ; certains boss et profils possèdent des valeurs particulières.</p>
 
 <h2 id="vagues">Vagues et boss</h2>
 <p>Les vagues ordinaires mélangent corps à corps, distance et spécialistes. Les multiples de quatre qui ne sont pas des boss sont des vagues spéciales d’un seul type : araignées venimeuses, creepers, poissons d’argent, slimes ou cubes de magma. Leur ordre est mélangé au début, puis répété.</p>
+<p>Les Vex invoqués par les évocateurs infligent moitié moins de dégâts. Les Vindicators se déplacent <strong>25 % moins vite</strong>. Les Breeze peuvent apparaître des <strong>vagues 5 à 25 incluses</strong> et ont deux fois moins de PV de base.</p>
 <p>Une pause de <strong>10 secondes</strong> suit chaque vague hors boss. La barre supérieure indique la vague et les ennemis restants, ou la vie des boss. Les montures et les descendants des slimes et cubes de magma doivent aussi être éliminés. Les invocations des évocateurs ne bloquent pas la fin de vague.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>Vague</th><th>Boss prévu</th><th>Particularités</th><th>Ouverture de sortie après victoire</th></tr></thead>
@@ -62,6 +64,7 @@
 <tr><td>1</td><td>Bouteille d’expérience</td><td>15</td></tr>
 <tr><td>2</td><td>Modèle d’amélioration en netherite</td><td>5</td></tr>
 <tr><td>2</td><td>Livre à enchantement aléatoire, niveau aléatoire jusqu’au maximum</td><td>10</td></tr>
+<tr><td>2</td><td>Tête de Wither Skeleton</td><td>5</td></tr>
 <tr><td>3</td><td>Livre à enchantement aléatoire au niveau maximum</td><td>5</td></tr>
 <tr><td>3</td><td>Modèle de garniture d’armure aléatoire</td><td>5</td></tr>
 <tr><td>3</td><td>Fragment de netherite</td><td>5</td></tr>
@@ -73,10 +76,16 @@
 <p>Les livres de niveau 5 choisissent parmi Efficacité, Fortune, Solidité, Tranchant, Châtiment, Protection, Butin et Puissance. Les potions peuvent donner vitesse, force, saut, régénération, résistance au feu, respiration aquatique, invisibilité, vision nocturne ou chute lente, au niveau I ou II, pour 5 à 30 minutes par pas de 5.</p>
 
 <h2 id="ingredients">Ingrédients garantis pour les armes</h2>
-<p>Chaque joueur qui sort reçoit aussi <strong>un ingrédient par boss vaincu aux vagues 30, 40 et 50</strong> : un après la vague 30, deux après la vague 40, trois après la vague 50. Ces gains s’ajoutent au lot ordinaire.</p>
+<p>Chaque joueur qui sort par le portail reçoit aussi <strong>un ingrédient par palier de boss terminé</strong> aux vagues 10, 20, 30, 40 et 50. Ces gains s’ajoutent au lot ordinaire, d’un ingrédient après la vague 10 à cinq après la vague 50.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>Boss vaincu</th><th>Niveau 1</th><th>Niveau 2</th><th>Niveau 3</th><th>Niveau 4</th></tr></thead>
-<tbody><tr><td>Vague 30</td><td>70 %</td><td>25 %</td><td>5 %</td><td>0 %</td></tr><tr><td>Vague 40</td><td>20 %</td><td>35 %</td><td>35 %</td><td>10 %</td></tr><tr><td>Vague 50</td><td>0 %</td><td>25 %</td><td>25 %</td><td>50 %</td></tr></tbody>
+<tbody>
+<tr><td>Vague 10</td><td>100 %</td><td>0 %</td><td>0 %</td><td>0 %</td></tr>
+<tr><td>Vague 20</td><td>75 %</td><td>25 %</td><td>0 %</td><td>0 %</td></tr>
+<tr><td>Vague 30</td><td>0 %</td><td>75 %</td><td>25 %</td><td>0 %</td></tr>
+<tr><td>Vague 40</td><td>0 %</td><td>0 %</td><td>75 %</td><td>25 %</td></tr>
+<tr><td>Vague 50</td><td>0 %</td><td>0 %</td><td>0 %</td><td>100 %</td></tr>
+</tbody>
 </table></div>
 <div class="table-scroll"><table>
 <thead><tr><th>Niveau</th><th>Ingrédients possibles, à chances égales</th></tr></thead>
